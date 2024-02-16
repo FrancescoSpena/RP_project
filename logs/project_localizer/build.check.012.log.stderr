@@ -1,0 +1,14 @@
+[31m[1mCMake Error[0m at /home/francesco/Desktop/RP_project/src/project_localizer/CMakeLists.txt:143 (add_subdirectory):
+  The source directory
+
+    /home/francesco/Desktop/RP_project/src/project_localizer/src
+
+  does not contain a CMakeLists.txt file.
+
+
+[31m[1mCMake Error[0m at /home/francesco/Desktop/RP_project/src/project_localizer/CMakeLists.txt:157 (target_link_libraries):
+  Cannot specify link libraries for target "publisher_node" which is not
+  built by this project.
+
+
+make: *** [Makefile:574: cmake_check_build_system] Error 1

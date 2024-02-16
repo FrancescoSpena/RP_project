@@ -1,0 +1,6 @@
+[31m[1mCMake Error[0m at /home/francesco/Desktop/RP_project/src/project_localizer/CMakeLists.txt:141 (add_subdirectory):
+  add_subdirectory given source "rp_stuff" which is not an existing
+  directory.
+
+
+make: *** [Makefile:574: cmake_check_build_system] Error 1

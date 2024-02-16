@@ -1,0 +1,1 @@
+/home/francesco/Desktop/RP_project/devel/.private/catkin_tools_prebuild/setup.bash

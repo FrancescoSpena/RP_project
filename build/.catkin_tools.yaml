@@ -1,0 +1,6 @@
+devel_space: /home/francesco/Desktop/RP_project/devel
+install: false
+install_space: /home/francesco/Desktop/RP_project/install
+profile: default
+source_space: /home/francesco/Desktop/RP_project/src
+workspace: /home/francesco/Desktop/RP_project

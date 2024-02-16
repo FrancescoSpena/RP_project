@@ -1,0 +1,1 @@
+/home/francesco/Desktop/RP_project/devel/.private/project_localizer/share/project_localizer/cmake/project_localizerConfig-version.cmake

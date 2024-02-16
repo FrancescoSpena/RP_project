@@ -1,0 +1,8 @@
+prefix=/home/francesco/Desktop/RP_project/devel/.private/project_localizer
+
+Name: project_localizer
+Description: Description of project_localizer
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
