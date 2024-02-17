@@ -1,6 +1,13 @@
 project_localizer
 /home/francesco/Desktop/RP_project/devel/.private/project_localizer/cmake.lock /home/francesco/Desktop/RP_project/devel/./cmake.lock
+/home/francesco/Desktop/RP_project/devel/.private/project_localizer/lib/librp_library.so /home/francesco/Desktop/RP_project/devel/lib/librp_library.so
 /home/francesco/Desktop/RP_project/devel/.private/project_localizer/lib/pkgconfig/project_localizer.pc /home/francesco/Desktop/RP_project/devel/lib/pkgconfig/project_localizer.pc
-/home/francesco/Desktop/RP_project/devel/.private/project_localizer/lib/project_localizer/publisher_node /home/francesco/Desktop/RP_project/devel/lib/project_localizer/publisher_node
+/home/francesco/Desktop/RP_project/devel/.private/project_localizer/lib/project_localizer/grid_main /home/francesco/Desktop/RP_project/devel/lib/project_localizer/grid_main
+/home/francesco/Desktop/RP_project/devel/.private/project_localizer/lib/project_localizer/rp_simulator /home/francesco/Desktop/RP_project/devel/lib/project_localizer/rp_simulator
+/home/francesco/Desktop/RP_project/devel/.private/project_localizer/lib/project_localizer/dmap_test_in_class /home/francesco/Desktop/RP_project/devel/lib/project_localizer/dmap_test_in_class
+/home/francesco/Desktop/RP_project/devel/.private/project_localizer/lib/project_localizer/main_node /home/francesco/Desktop/RP_project/devel/lib/project_localizer/main_node
+/home/francesco/Desktop/RP_project/devel/.private/project_localizer/lib/project_localizer/dmap_grid_localizer_test /home/francesco/Desktop/RP_project/devel/lib/project_localizer/dmap_grid_localizer_test
+/home/francesco/Desktop/RP_project/devel/.private/project_localizer/lib/project_localizer/test_grid_map /home/francesco/Desktop/RP_project/devel/lib/project_localizer/test_grid_map
+/home/francesco/Desktop/RP_project/devel/.private/project_localizer/lib/project_localizer/dmap_localizer_test /home/francesco/Desktop/RP_project/devel/lib/project_localizer/dmap_localizer_test
 /home/francesco/Desktop/RP_project/devel/.private/project_localizer/share/project_localizer/cmake/project_localizerConfig-version.cmake /home/francesco/Desktop/RP_project/devel/share/project_localizer/cmake/project_localizerConfig-version.cmake
 /home/francesco/Desktop/RP_project/devel/.private/project_localizer/share/project_localizer/cmake/project_localizerConfig.cmake /home/francesco/Desktop/RP_project/devel/share/project_localizer/cmake/project_localizerConfig.cmake

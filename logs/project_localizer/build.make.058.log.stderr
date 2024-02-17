@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/main_node.dir/src/main_node.cpp.o: in function `mapCallBack(nav_msgs::OccupancyGrid_<std::allocator<void> > const&)':
+main_node.cpp:(.text+0x352): undefined reference to `DMap::compute(std::vector<Eigen::Matrix<int, 2, 1, 0, 2, 1>, std::allocator<Eigen::Matrix<int, 2, 1, 0, 2, 1> > > const&, int)'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/main_node.dir/build.make:101: /home/francesco/Desktop/RP_project/devel/.private/project_localizer/lib/project_localizer/main_node] Error 1
+make[1]: *** [CMakeFiles/Makefile2:188: CMakeFiles/main_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

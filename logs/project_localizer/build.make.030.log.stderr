@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/publisher_node.dir/src/publisher_node.cpp.o: in function `_GLOBAL__sub_I_dmap':
+publisher_node.cpp:(.text.startup+0x289): undefined reference to `GridMap::GridMap(float, int, int)'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/publisher_node.dir/build.make:101: /home/francesco/Desktop/RP_project/devel/.private/project_localizer/lib/project_localizer/publisher_node] Error 1
+make[1]: *** [CMakeFiles/Makefile2:323: CMakeFiles/publisher_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

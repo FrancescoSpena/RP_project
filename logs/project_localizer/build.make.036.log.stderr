@@ -1,0 +1,7 @@
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/publisher_node.cpp:[m[K In function ‘[01m[Kvoid mapCallBack(const OccupancyGrid&)[m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/publisher_node.cpp:30:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst _info_type[m[K’ {aka ‘[01m[Kconst struct nav_msgs::MapMetaData_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdata[m[K’
+   30 |         grid_map.cells = map.info.[01;31m[Kdata[m[K;
+      |                                   [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/publisher_node.dir/build.make:63: CMakeFiles/publisher_node.dir/src/publisher_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:323: CMakeFiles/publisher_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,9 @@
+/usr/bin/ld: CMakeFiles/publisher_node.dir/src/publisher_node.cpp.o: in function `mapCallBack(nav_msgs::OccupancyGrid_<std::allocator<void> > const&)':
+publisher_node.cpp:(.text+0x45f): undefined reference to `DMap::compute(std::vector<Eigen::Matrix<int, 2, 1, 0, 2, 1>, std::allocator<Eigen::Matrix<int, 2, 1, 0, 2, 1> > > const&, int)'
+/usr/bin/ld: CMakeFiles/publisher_node.dir/src/publisher_node.cpp.o: in function `cv::Mat::~Mat()':
+publisher_node.cpp:(.text._ZN2cv3MatD2Ev[_ZN2cv3MatD5Ev]+0x5e): undefined reference to `cv::fastFree(void*)'
+/usr/bin/ld: publisher_node.cpp:(.text._ZN2cv3MatD2Ev[_ZN2cv3MatD5Ev]+0x69): undefined reference to `cv::Mat::deallocate()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/publisher_node.dir/build.make:101: /home/francesco/Desktop/RP_project/devel/.private/project_localizer/lib/project_localizer/publisher_node] Error 1
+make[1]: *** [CMakeFiles/Makefile2:323: CMakeFiles/publisher_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

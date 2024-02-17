@@ -1,0 +1,62 @@
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:8[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid_map.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/world_item.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/world_item.cpp:1[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h:4:10:[m[K [01;31m[Kfatal error: [m[Kgrid.h: No such file or directory
+    4 | #include [01;31m[K<grid.h>[m[K
+      |          [01;31m[K^~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:8[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid_map.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid_map.cpp:1[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h:4:10:[m[K [01;31m[Kfatal error: [m[Kgrid.h: No such file or directory
+    4 | #include [01;31m[K<grid.h>[m[K
+      |          [01;31m[K^~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:8[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid_map.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/laser_scan.h:4[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/laser_scanner.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/laser_scanner.cpp:1[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h:4:10:[m[K [01;31m[Kfatal error: [m[Kgrid.h: No such file or directory
+    4 | #include [01;31m[K<grid.h>[m[K
+      |          [01;31m[K^~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:8[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.cpp:1[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h:4:10:[m[K [01;31m[Kfatal error: [m[Kgrid.h: No such file or directory
+    4 | #include [01;31m[K<grid.h>[m[K
+      |          [01;31m[K^~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [src/rp_stuff/CMakeFiles/rp_library.dir/build.make:63: src/rp_stuff/CMakeFiles/rp_library.dir/grid_map.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [src/rp_stuff/CMakeFiles/rp_library.dir/build.make:102: src/rp_stuff/CMakeFiles/rp_library.dir/world_item.cpp.o] Error 1
+make[2]: *** [src/rp_stuff/CMakeFiles/rp_library.dir/build.make:128: src/rp_stuff/CMakeFiles/rp_library.dir/dmap.cpp.o] Error 1
+make[2]: *** [src/rp_stuff/CMakeFiles/rp_library.dir/build.make:115: src/rp_stuff/CMakeFiles/rp_library.dir/laser_scanner.cpp.o] Error 1
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:8[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid_map.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/laser_scan.h:4[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/laser_scan.cpp:1[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h:4:10:[m[K [01;31m[Kfatal error: [m[Kgrid.h: No such file or directory
+    4 | #include [01;31m[K<grid.h>[m[K
+      |          [01;31m[K^~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [src/rp_stuff/CMakeFiles/rp_library.dir/build.make:89: src/rp_stuff/CMakeFiles/rp_library.dir/laser_scan.cpp.o] Error 1
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.cpp:1[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h:4:10:[m[K [01;31m[Kfatal error: [m[Kgrid.h: No such file or directory
+    4 | #include [01;31m[K<grid.h>[m[K
+      |          [01;31m[K^~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [src/rp_stuff/CMakeFiles/rp_library.dir/build.make:76: src/rp_stuff/CMakeFiles/rp_library.dir/draw_helpers.cpp.o] Error 1
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:8[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap_localizer.h:4[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap_localizer.cpp:1[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h:4:10:[m[K [01;31m[Kfatal error: [m[Kgrid.h: No such file or directory
+    4 | #include [01;31m[K<grid.h>[m[K
+      |          [01;31m[K^~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [src/rp_stuff/CMakeFiles/rp_library.dir/build.make:141: src/rp_stuff/CMakeFiles/rp_library.dir/dmap_localizer.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1478: src/rp_stuff/CMakeFiles/rp_library.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

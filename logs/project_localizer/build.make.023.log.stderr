@@ -1,0 +1,10 @@
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/publisher_node.cpp:[m[K In function ‘[01m[Kvoid mapCallBack(const OccupancyGrid&)[m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/publisher_node.cpp:15:25:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst OccupancyGrid[m[K’ {aka ‘[01m[Kconst nav_msgs::OccupancyGrid_<std::allocator<void> >[m[K’}
+   15 |     uint32_t widht = map[01;31m[K->[m[Kinfo->widht;
+      |                         [01;31m[K^~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/publisher_node.cpp:16:26:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst OccupancyGrid[m[K’ {aka ‘[01m[Kconst nav_msgs::OccupancyGrid_<std::allocator<void> >[m[K’}
+   16 |     uint32_t height = map[01;31m[K->[m[Kinfo->height;
+      |                          [01;31m[K^~[m[K
+make[2]: *** [CMakeFiles/publisher_node.dir/build.make:63: CMakeFiles/publisher_node.dir/src/publisher_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:323: CMakeFiles/publisher_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

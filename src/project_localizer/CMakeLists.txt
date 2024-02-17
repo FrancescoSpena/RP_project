@@ -12,6 +12,9 @@ set(CXX_STANDARD c++17)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   roscpp
+  sensor_msgs
+  geometry_msgs
+  nav_msgs
 )
 
 find_package(OpenCV REQUIRED)
@@ -125,6 +128,8 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
+add_subdirectory(src/rp_stuff)
+
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/project_localizer.cpp
@@ -138,7 +143,7 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(publisher_node src/publisher_node.cpp)
+add_executable(main_node src/main_node.cpp)
 
 
 ## Rename C++ executable without prefix
@@ -152,8 +157,9 @@ add_executable(publisher_node src/publisher_node.cpp)
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(publisher_node
+target_link_libraries(main_node
    ${catkin_LIBRARIES}
+   rp_library
 )
 
 #############

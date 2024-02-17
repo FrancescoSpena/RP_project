@@ -1,0 +1,7 @@
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:[m[K In function ‘[01m[Kvoid mapCallBack(const OccupancyGrid&)[m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:30:39:[m[K [01;31m[Kerror: [m[Kinvalid cast from type ‘[01m[Kconst _data_type[m[K’ {aka ‘[01m[Kconst std::vector<signed char, std::allocator<signed char> >[m[K’} to type ‘[01m[Kuint8_t[m[K’ {aka ‘[01m[Kunsigned char[m[K’}
+   30 |         grid_map.cells = (uint8_t)map.[01;31m[Kdata[m[K;
+      |                                       [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/main_node.dir/build.make:63: CMakeFiles/main_node.dir/src/main_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/main_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

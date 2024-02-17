@@ -1,0 +1,21 @@
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/publisher_node.cpp:14:9:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KGridMap::GridMap()[m[K’
+   14 | GridMap [01;31m[Kgrid_map[m[K;
+      |         [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/publisher_node.cpp:5[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid_map.h:53:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KGridMap::GridMap(float, int, int)[m[K’
+   53 |   [01;36m[KGridMap[m[K(float resolution, int rows=0, int cols=0);
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid_map.h:53:3:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid_map.h:43:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KGridMap::GridMap(const GridMap&)[m[K’
+   43 | struct [01;36m[KGridMap[m[K: public Grid_<uint8_t>, public GridMapping{
+      |        [01;36m[K^~~~~~~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid_map.h:43:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid_map.h:43:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KGridMap::GridMap(GridMap&&)[m[K’
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid_map.h:43:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/publisher_node.cpp:[m[K In function ‘[01m[Kvoid mapCallBack(const OccupancyGrid&)[m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/publisher_node.cpp:30:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst _info_type[m[K’ {aka ‘[01m[Kconst struct nav_msgs::MapMetaData_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdata[m[K’
+   30 |         grid_map.cells = map.info.[01;31m[Kdata[m[K;
+      |                                   [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/publisher_node.dir/build.make:63: CMakeFiles/publisher_node.dir/src/publisher_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:323: CMakeFiles/publisher_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

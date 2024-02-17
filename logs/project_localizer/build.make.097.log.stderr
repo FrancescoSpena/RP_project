@@ -1,0 +1,24 @@
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:[m[K In function ‘[01m[Kvoid mapCallBack(const OccupancyGrid&)[m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:45:52:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KDMapLocalizer::setMap(std::vector<Eigen::Matrix<int, 2, 1> >&, const float&, int&)[m[K’
+   45 |         localizer.setMap(obstacles,resolution,dmax2[01;31m[K)[m[K;
+      |                                                    [01;31m[K^[m[K
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:10[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap_localizer.h:24:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid DMapLocalizer::setMap(std::vector<Eigen::Matrix<float, 2, 1> >, float, float)[m[K’
+   24 |   void [01;36m[KsetMap[m[K(const std::vector<Eigen::Vector2f> obstacles,
+      |        [01;36m[K^~~~~~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap_localizer.h:24:50:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kvector<Matrix<[01;32m[Kint[m[K,[...],[...]>>[m[K’ to ‘[01m[Kvector<Matrix<[01;32m[Kfloat[m[K,[...],[...]>>[m[K’
+   24 |   void setMap([01;36m[Kconst std::vector<Eigen::Vector2f> obstacles[m[K,
+      |               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap_localizer.h:28:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid DMapLocalizer::setMap(const GridMapping&, const Grid_<float>&)[m[K’
+   28 |   void [01;36m[KsetMap[m[K(const GridMapping& mapping,
+      |        [01;36m[K^~~~~~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap_localizer.h:28:8:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap_localizer.h:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid DMapLocalizer::setMap(const GridMap&, float, uint8_t)[m[K’
+   32 |   void [01;36m[KsetMap[m[K(const GridMap& grid_map,
+      |        [01;36m[K^~~~~~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap_localizer.h:32:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >[m[K’ to ‘[01m[Kconst GridMap&[m[K’
+   32 |   void setMap([01;36m[Kconst GridMap& grid_map[m[K,
+      |               [01;36m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/main_node.dir/build.make:63: CMakeFiles/main_node.dir/src/main_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/main_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

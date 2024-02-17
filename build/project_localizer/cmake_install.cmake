@@ -146,6 +146,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/francesco/Desktop/RP_project/build/project_localizer/gtest/cmake_install.cmake")
+  include("/home/francesco/Desktop/RP_project/build/project_localizer/src/rp_stuff/cmake_install.cmake")
 
 endif()
 

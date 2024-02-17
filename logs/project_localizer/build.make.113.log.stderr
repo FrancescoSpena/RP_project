@@ -1,0 +1,1549 @@
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h: In instantiation of ‘[01m[Kvoid Grid_<CellType_>::draw(Canvas&, bool) const [with CellType_ = DMapCell; Canvas = cv::Mat][m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:50:35:[m[K   required from here
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:130:20:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kint[m[K’ to non-scalar type ‘[01m[KGrid_<DMapCell>::CellType[m[K’ {aka ‘[01m[KDMapCell[m[K’} requested
+  130 |     CellType lower=[01;31m[K0[m[K;
+      |                    [01;31m[K^[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:131:20:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kint[m[K’ to non-scalar type ‘[01m[KGrid_<DMapCell>::CellType[m[K’ {aka ‘[01m[KDMapCell[m[K’} requested
+  131 |     CellType scale=[01;31m[K1[m[K;
+      |                    [01;31m[K^[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:139:27:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator-[m[K’ (operand types are ‘[01m[KGrid_<DMapCell>::CellType[m[K’ {aka ‘[01m[KDMapCell[m[K’} and ‘[01m[KGrid_<DMapCell>::CellType[m[K’ {aka ‘[01m[KDMapCell[m[K’})
+  139 |       scale=255.f / [01;31m[K(upper-lower)[m[K;
+      |                     [01;31m[K~~~~~~^~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:415:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)[m[K’
+  415 |     [01;36m[Koperator[m[K-(const reverse_iterator<_IteratorL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:415:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:139:27:[m[K [01;36m[Knote: [m[K  ‘[01m[KGrid_<DMapCell>::CellType[m[K’ {aka ‘[01m[KDMapCell[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+  139 |       scale=255.f / [01;36m[K(upper-lower)[m[K;
+      |                     [01;36m[K~~~~~~^~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:1209:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)[m[K’
+ 1209 |     [01;36m[Koperator[m[K-(const move_iterator<_IteratorL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:1209:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:139:27:[m[K [01;36m[Knote: [m[K  ‘[01m[KGrid_<DMapCell>::CellType[m[K’ {aka ‘[01m[KDMapCell[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+  139 |       scale=255.f / [01;36m[K(upper-lower)[m[K;
+      |                     [01;36m[K~~~~~~^~~~~~~[m[K
+In file included from [01m[K/usr/include/boost/config/no_tr1/complex.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/complex:361:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&, const std::complex<_Tp>&)[m[K’
+  361 |     [01;36m[Koperator[m[K-(const complex<_Tp>& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/complex:361:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:139:27:[m[K [01;36m[Knote: [m[K  ‘[01m[KGrid_<DMapCell>::CellType[m[K’ {aka ‘[01m[KDMapCell[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  139 |       scale=255.f / [01;36m[K(upper-lower)[m[K;
+      |                     [01;36m[K~~~~~~^~~~~~~[m[K
+In file included from [01m[K/usr/include/boost/config/no_tr1/complex.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/complex:370:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&, const _Tp&)[m[K’
+  370 |     [01;36m[Koperator[m[K-(const complex<_Tp>& __x, const _Tp& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/complex:370:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:139:27:[m[K [01;36m[Knote: [m[K  ‘[01m[KGrid_<DMapCell>::CellType[m[K’ {aka ‘[01m[KDMapCell[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  139 |       scale=255.f / [01;36m[K(upper-lower)[m[K;
+      |                     [01;36m[K~~~~~~^~~~~~~[m[K
+In file included from [01m[K/usr/include/boost/config/no_tr1/complex.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/complex:379:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator-(const _Tp&, const std::complex<_Tp>&)[m[K’
+  379 |     [01;36m[Koperator[m[K-(const _Tp& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/complex:379:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:139:27:[m[K [01;36m[Knote: [m[K  ‘[01m[KGrid_<DMapCell>::CellType[m[K’ {aka ‘[01m[KDMapCell[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  139 |       scale=255.f / [01;36m[K(upper-lower)[m[K;
+      |                     [01;36m[K~~~~~~^~~~~~~[m[K
+In file included from [01m[K/usr/include/boost/config/no_tr1/complex.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/complex:456:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&)[m[K’
+  456 |     [01;36m[Koperator[m[K-(const complex<_Tp>& __x)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/complex:456:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:139:27:[m[K [01;36m[Knote: [m[K  ‘[01m[KGrid_<DMapCell>::CellType[m[K’ {aka ‘[01m[KDMapCell[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  139 |       scale=255.f / [01;36m[K(upper-lower)[m[K;
+      |                     [01;36m[K~~~~~~^~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/vector:68[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/math_fwd.hpp:26[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:15[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_bvector.h:214:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ptrdiff_t std::operator-(const std::_Bit_iterator_base&, const std::_Bit_iterator_base&)[m[K’
+  214 |   [01;36m[Koperator[m[K-(const _Bit_iterator_base& __x, const _Bit_iterator_base& __y)
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_bvector.h:214:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KGrid_<DMapCell>::CellType[m[K’ {aka ‘[01m[KDMapCell[m[K’} to ‘[01m[Kconst std::_Bit_iterator_base&[m[K’
+  214 |   operator-([01;36m[Kconst _Bit_iterator_base& __x[m[K, const _Bit_iterator_base& __y)
+      |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+In file included from [01m[K/usr/include/c++/9/deque:67[m[K,
+                 from [01m[K/usr/include/c++/9/queue:60[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util.hpp:119[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching.hpp:50[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:89[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:8[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/usr/include/c++/9/bits/stl_deque.h:370:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Ref, class _Ptr> typename std::_Deque_iterator<_Tp, _Ref, _Ptr>::difference_type std::operator-(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)[m[K’
+  370 |     [01;36m[Koperator[m[K-(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_deque.h:370:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:139:27:[m[K [01;36m[Knote: [m[K  ‘[01m[KGrid_<DMapCell>::CellType[m[K’ {aka ‘[01m[KDMapCell[m[K’} is not derived from ‘[01m[Kconst std::_Deque_iterator<_Tp, _Ref, _Ptr>[m[K’
+  139 |       scale=255.f / [01;36m[K(upper-lower)[m[K;
+      |                     [01;36m[K~~~~~~^~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/deque:67[m[K,
+                 from [01m[K/usr/include/c++/9/queue:60[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util.hpp:119[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching.hpp:50[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:89[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:8[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/usr/include/c++/9/bits/stl_deque.h:382:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _RefL, class _PtrL, class _RefR, class _PtrR> typename std::_Deque_iterator<_Tp, _Ref, _Ptr>::difference_type std::operator-(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _RefR, _PtrR>&)[m[K’
+  382 |     [01;36m[Koperator[m[K-(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_deque.h:382:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:139:27:[m[K [01;36m[Knote: [m[K  ‘[01m[KGrid_<DMapCell>::CellType[m[K’ {aka ‘[01m[KDMapCell[m[K’} is not derived from ‘[01m[Kconst std::_Deque_iterator<_Tp, _Ref, _Ptr>[m[K’
+  139 |       scale=255.f / [01;36m[K(upper-lower)[m[K;
+      |                     [01;36m[K~~~~~~^~~~~~~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:145:36:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator-[m[K’ (operand types are ‘[01m[Kconst value_type[m[K’ {aka ‘[01m[Kconst DMapCell[m[K’} and ‘[01m[KGrid_<DMapCell>::CellType[m[K’ {aka ‘[01m[KDMapCell[m[K’})
+  145 |       dest_ptr[i] = scale*[01;31m[K(cells[i]-lower)[m[K;
+      |                           [01;31m[K~~~~~~~~~^~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:415:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)[m[K’
+  415 |     [01;36m[Koperator[m[K-(const reverse_iterator<_IteratorL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:415:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:145:36:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst value_type[m[K’ {aka ‘[01m[Kconst DMapCell[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+  145 |       dest_ptr[i] = scale*[01;36m[K(cells[i]-lower)[m[K;
+      |                           [01;36m[K~~~~~~~~~^~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:1209:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)[m[K’
+ 1209 |     [01;36m[Koperator[m[K-(const move_iterator<_IteratorL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:1209:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:145:36:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst value_type[m[K’ {aka ‘[01m[Kconst DMapCell[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+  145 |       dest_ptr[i] = scale*[01;36m[K(cells[i]-lower)[m[K;
+      |                           [01;36m[K~~~~~~~~~^~~~~~~[m[K
+In file included from [01m[K/usr/include/boost/config/no_tr1/complex.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/complex:361:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&, const std::complex<_Tp>&)[m[K’
+  361 |     [01;36m[Koperator[m[K-(const complex<_Tp>& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/complex:361:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:145:36:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst value_type[m[K’ {aka ‘[01m[Kconst DMapCell[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  145 |       dest_ptr[i] = scale*[01;36m[K(cells[i]-lower)[m[K;
+      |                           [01;36m[K~~~~~~~~~^~~~~~~[m[K
+In file included from [01m[K/usr/include/boost/config/no_tr1/complex.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/complex:370:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&, const _Tp&)[m[K’
+  370 |     [01;36m[Koperator[m[K-(const complex<_Tp>& __x, const _Tp& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/complex:370:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:145:36:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst value_type[m[K’ {aka ‘[01m[Kconst DMapCell[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  145 |       dest_ptr[i] = scale*[01;36m[K(cells[i]-lower)[m[K;
+      |                           [01;36m[K~~~~~~~~~^~~~~~~[m[K
+In file included from [01m[K/usr/include/boost/config/no_tr1/complex.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/complex:379:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator-(const _Tp&, const std::complex<_Tp>&)[m[K’
+  379 |     [01;36m[Koperator[m[K-(const _Tp& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/complex:379:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:145:36:[m[K [01;36m[Knote: [m[K  ‘[01m[KGrid_<DMapCell>::CellType[m[K’ {aka ‘[01m[KDMapCell[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  145 |       dest_ptr[i] = scale*[01;36m[K(cells[i]-lower)[m[K;
+      |                           [01;36m[K~~~~~~~~~^~~~~~~[m[K
+In file included from [01m[K/usr/include/boost/config/no_tr1/complex.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/complex:456:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&)[m[K’
+  456 |     [01;36m[Koperator[m[K-(const complex<_Tp>& __x)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/complex:456:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:145:36:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst value_type[m[K’ {aka ‘[01m[Kconst DMapCell[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  145 |       dest_ptr[i] = scale*[01;36m[K(cells[i]-lower)[m[K;
+      |                           [01;36m[K~~~~~~~~~^~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/vector:68[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/math_fwd.hpp:26[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:15[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_bvector.h:214:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ptrdiff_t std::operator-(const std::_Bit_iterator_base&, const std::_Bit_iterator_base&)[m[K’
+  214 |   [01;36m[Koperator[m[K-(const _Bit_iterator_base& __x, const _Bit_iterator_base& __y)
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_bvector.h:214:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst value_type[m[K’ {aka ‘[01m[Kconst DMapCell[m[K’} to ‘[01m[Kconst std::_Bit_iterator_base&[m[K’
+  214 |   operator-([01;36m[Kconst _Bit_iterator_base& __x[m[K, const _Bit_iterator_base& __y)
+      |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+In file included from [01m[K/usr/include/c++/9/deque:67[m[K,
+                 from [01m[K/usr/include/c++/9/queue:60[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util.hpp:119[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching.hpp:50[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:89[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:8[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/usr/include/c++/9/bits/stl_deque.h:370:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Ref, class _Ptr> typename std::_Deque_iterator<_Tp, _Ref, _Ptr>::difference_type std::operator-(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)[m[K’
+  370 |     [01;36m[Koperator[m[K-(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_deque.h:370:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:145:36:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst value_type[m[K’ {aka ‘[01m[Kconst DMapCell[m[K’} is not derived from ‘[01m[Kconst std::_Deque_iterator<_Tp, _Ref, _Ptr>[m[K’
+  145 |       dest_ptr[i] = scale*[01;36m[K(cells[i]-lower)[m[K;
+      |                           [01;36m[K~~~~~~~~~^~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/deque:67[m[K,
+                 from [01m[K/usr/include/c++/9/queue:60[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util.hpp:119[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching.hpp:50[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:89[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:8[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/usr/include/c++/9/bits/stl_deque.h:382:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _RefL, class _PtrL, class _RefR, class _PtrR> typename std::_Deque_iterator<_Tp, _Ref, _Ptr>::difference_type std::operator-(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _RefR, _PtrR>&)[m[K’
+  382 |     [01;36m[Koperator[m[K-(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_deque.h:382:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:145:36:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst value_type[m[K’ {aka ‘[01m[Kconst DMapCell[m[K’} is not derived from ‘[01m[Kconst std::_Deque_iterator<_Tp, _Ref, _Ptr>[m[K’
+  145 |       dest_ptr[i] = scale*[01;36m[K(cells[i]-lower)[m[K;
+      |                           [01;36m[K~~~~~~~~~^~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+/usr/include/c++/9/bits/stl_algobase.h: In instantiation of ‘[01m[Kconstexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = DMapCell][m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:136:23:[m[K   required from ‘[01m[Kvoid Grid_<CellType_>::draw(Canvas&, bool) const [with CellType_ = DMapCell; Canvas = cv::Mat][m[K’
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:50:35:[m[K   required from here
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<[m[K’ (operand types are ‘[01m[Kconst DMapCell[m[K’ and ‘[01m[Kconst DMapCell[m[K’)
+  203 |       if ([01;31m[K__b < __a[m[K)
+      |           [01;31m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:64[m[K,
+                 from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_pair.h:454:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)[m[K’
+  454 |     [01;36m[Koperator[m[K<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_pair.h:454:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::pair<_T1, _T2>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:331:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)[m[K’
+  331 |     [01;36m[Koperator[m[K<(const reverse_iterator<_Iterator>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:331:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:369:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)[m[K’
+  369 |     [01;36m[Koperator[m[K<(const reverse_iterator<_IteratorL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:369:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:1160:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)[m[K’
+ 1160 |     [01;36m[Koperator[m[K<(const move_iterator<_IteratorL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:1160:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:1166:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)[m[K’
+ 1166 |     [01;36m[Koperator[m[K<(const move_iterator<_Iterator>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:1166:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/basic_string.h:6229:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)[m[K’
+ 6229 |     [01;36m[Koperator[m[K<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/basic_string.h:6229:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/basic_string.h:6242:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)[m[K’
+ 6242 |     [01;36m[Koperator[m[K<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/basic_string.h:6242:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/basic_string.h:6254:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)[m[K’
+ 6254 |     [01;36m[Koperator[m[K<(const _CharT* __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/basic_string.h:6254:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[KDMapCell[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/ios_base.h:46[m[K,
+                 from [01m[K/usr/include/c++/9/ios:42[m[K,
+                 from [01m[K/usr/include/c++/9/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/9/iostream:39[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:54[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/system_error:208:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator<(const std::error_code&, const std::error_code&)[m[K’
+  208 |   [01;36m[Koperator[m[K<(const error_code& __lhs, const error_code& __rhs) noexcept
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/system_error:208:31:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst DMapCell[m[K’ to ‘[01m[Kconst std::error_code&[m[K’
+  208 |   operator<([01;36m[Kconst error_code& __lhs[m[K, const error_code& __rhs) noexcept
+      |             [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/c++/9/system_error:282:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator<(const std::error_condition&, const std::error_condition&)[m[K’
+  282 |   [01;36m[Koperator[m[K<(const error_condition& __lhs,
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/system_error:282:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst DMapCell[m[K’ to ‘[01m[Kconst std::error_condition&[m[K’
+  282 |   operator<([01;36m[Kconst error_condition& __lhs[m[K,
+      |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/tuple:39[m[K,
+                 from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/9/bits/locale_conv.h:41[m[K,
+                 from [01m[K/usr/include/c++/9/locale:43[m[K,
+                 from [01m[K/usr/include/c++/9/iomanip:43[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:12[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/array:262:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, long unsigned int _Nm> bool std::operator<(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)[m[K’
+  262 |     [01;36m[Koperator[m[K<(const array<_Tp, _Nm>& __a, const array<_Tp, _Nm>& __b)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/array:262:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/9/bits/locale_conv.h:41[m[K,
+                 from [01m[K/usr/include/c++/9/locale:43[m[K,
+                 from [01m[K/usr/include/c++/9/iomanip:43[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:12[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/tuple:1432:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... _TElements, class ... _UElements> constexpr bool std::operator<(const std::tuple<_Tps ...>&, const std::tuple<_Elements ...>&)[m[K’
+ 1432 |     [01;36m[Koperator[m[K<(const tuple<_TElements...>& __t,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/tuple:1432:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::tuple<_Tps ...>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/locale_conv.h:41[m[K,
+                 from [01m[K/usr/include/c++/9/locale:43[m[K,
+                 from [01m[K/usr/include/c++/9/iomanip:43[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:12[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/unique_ptr.h:749:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)[m[K’
+  749 |     [01;36m[Koperator[m[K<(const unique_ptr<_Tp, _Dp>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/unique_ptr.h:749:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/locale_conv.h:41[m[K,
+                 from [01m[K/usr/include/c++/9/locale:43[m[K,
+                 from [01m[K/usr/include/c++/9/iomanip:43[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:12[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/unique_ptr.h:760:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)[m[K’
+  760 |     [01;36m[Koperator[m[K<(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/unique_ptr.h:760:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/locale_conv.h:41[m[K,
+                 from [01m[K/usr/include/c++/9/locale:43[m[K,
+                 from [01m[K/usr/include/c++/9/iomanip:43[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:12[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/unique_ptr.h:766:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::operator<(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)[m[K’
+  766 |     [01;36m[Koperator[m[K<(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/unique_ptr.h:766:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/vector:67[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/math_fwd.hpp:26[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:15[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_vector.h:1905:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)[m[K’
+ 1905 |     [01;36m[Koperator[m[K<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:1905:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::vector<_Tp, _Alloc>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/map:61[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/console.h:42[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_map.h:1472:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)[m[K’
+ 1472 |     [01;36m[Koperator[m[K<(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_map.h:1472:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::map<_Key, _Tp, _Compare, _Alloc>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/map:62[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/console.h:42[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_multimap.h:1136:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)[m[K’
+ 1136 |     [01;36m[Koperator[m[K<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_multimap.h:1136:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::multimap<_Key, _Tp, _Compare, _Alloc>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/set:61[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:34[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_set.h:996:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)[m[K’
+  996 |     [01;36m[Koperator[m[K<(const set<_Key, _Compare, _Alloc>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_set.h:996:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::set<_Key, _Compare, _Alloc>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/set:62[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:34[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_multiset.h:981:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)[m[K’
+  981 |     [01;36m[Koperator[m[K<(const multiset<_Key, _Compare, _Alloc>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_multiset.h:981:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::multiset<_Key, _Compare, _Alloc>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/list:63[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:35[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_list.h:2025:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator<(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)[m[K’
+ 2025 |     [01;36m[Koperator[m[K<(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_list.h:2025:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::list<_Tp, _Alloc>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/shared_ptr.h:52[m[K,
+                 from [01m[K/usr/include/c++/9/memory:81[m[K,
+                 from [01m[K/usr/include/boost/config/no_tr1/memory.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1444:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)[m[K’
+ 1444 |     [01;36m[Koperator[m[K<(const __shared_ptr<_Tp, _Lp>& __a,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1444:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp1, _Lp>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/shared_ptr.h:52[m[K,
+                 from [01m[K/usr/include/c++/9/memory:81[m[K,
+                 from [01m[K/usr/include/boost/config/no_tr1/memory.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1455:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)[m[K’
+ 1455 |     [01;36m[Koperator[m[K<(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1455:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/shared_ptr.h:52[m[K,
+                 from [01m[K/usr/include/c++/9/memory:81[m[K,
+                 from [01m[K/usr/include/boost/config/no_tr1/memory.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1463:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)[m[K’
+ 1463 |     [01;36m[Koperator[m[K<(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1463:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+                 from [01m[K/usr/include/boost/config/no_tr1/memory.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:413:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> bool std::operator<(const std::shared_ptr<_Tp>&, const std::shared_ptr<_Tp>&)[m[K’
+  413 |     [01;36m[Koperator[m[K<(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:413:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+                 from [01m[K/usr/include/boost/config/no_tr1/memory.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:423:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::operator<(const std::shared_ptr<_Tp>&, std::nullptr_t)[m[K’
+  423 |     [01;36m[Koperator[m[K<(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:423:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+                 from [01m[K/usr/include/boost/config/no_tr1/memory.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:431:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::operator<(std::nullptr_t, const std::shared_ptr<_Tp>&)[m[K’
+  431 |     [01;36m[Koperator[m[K<(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:431:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/deque:67[m[K,
+                 from [01m[K/usr/include/c++/9/queue:60[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util.hpp:119[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching.hpp:50[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:89[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:8[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/usr/include/c++/9/bits/stl_deque.h:312:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Ref, class _Ptr> bool std::operator<(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)[m[K’
+  312 |     [01;36m[Koperator[m[K<(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_deque.h:312:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::_Deque_iterator<_Tp, _Ref, _Ptr>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/deque:67[m[K,
+                 from [01m[K/usr/include/c++/9/queue:60[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util.hpp:119[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching.hpp:50[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:89[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:8[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/usr/include/c++/9/bits/stl_deque.h:320:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _RefL, class _PtrL, class _RefR, class _PtrR> bool std::operator<(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _RefR, _PtrR>&)[m[K’
+  320 |     [01;36m[Koperator[m[K<(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_deque.h:320:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::_Deque_iterator<_Tp, _Ref, _Ptr>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/deque:67[m[K,
+                 from [01m[K/usr/include/c++/9/queue:60[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util.hpp:119[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching.hpp:50[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:89[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:8[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/usr/include/c++/9/bits/stl_deque.h:2330:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator<(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)[m[K’
+ 2330 |     [01;36m[Koperator[m[K<(const deque<_Tp, _Alloc>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_deque.h:2330:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::deque<_Tp, _Alloc>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/queue:64[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util.hpp:119[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching.hpp:50[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:89[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:8[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/usr/include/c++/9/bits/stl_queue.h:356:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Seq> bool std::operator<(const std::queue<_Tp, _Seq>&, const std::queue<_Tp, _Seq>&)[m[K’
+  356 |     [01;36m[Koperator[m[K<(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_queue.h:356:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:203:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::queue<_Tp, _Seq>[m[K’
+  203 |       if ([01;36m[K__b < __a[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+/usr/include/c++/9/bits/stl_algobase.h: In instantiation of ‘[01m[Kconstexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = DMapCell][m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:137:23:[m[K   required from ‘[01m[Kvoid Grid_<CellType_>::draw(Canvas&, bool) const [with CellType_ = DMapCell; Canvas = cv::Mat][m[K’
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:50:35:[m[K   required from here
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<[m[K’ (operand types are ‘[01m[Kconst DMapCell[m[K’ and ‘[01m[Kconst DMapCell[m[K’)
+  227 |       if ([01;31m[K__a < __b[m[K)
+      |           [01;31m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:64[m[K,
+                 from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_pair.h:454:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)[m[K’
+  454 |     [01;36m[Koperator[m[K<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_pair.h:454:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::pair<_T1, _T2>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:331:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)[m[K’
+  331 |     [01;36m[Koperator[m[K<(const reverse_iterator<_Iterator>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:331:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:369:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)[m[K’
+  369 |     [01;36m[Koperator[m[K<(const reverse_iterator<_IteratorL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:369:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:1160:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)[m[K’
+ 1160 |     [01;36m[Koperator[m[K<(const move_iterator<_IteratorL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:1160:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:1166:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)[m[K’
+ 1166 |     [01;36m[Koperator[m[K<(const move_iterator<_Iterator>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:1166:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/basic_string.h:6229:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)[m[K’
+ 6229 |     [01;36m[Koperator[m[K<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/basic_string.h:6229:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/basic_string.h:6242:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)[m[K’
+ 6242 |     [01;36m[Koperator[m[K<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/basic_string.h:6242:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/basic_string.h:6254:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)[m[K’
+ 6254 |     [01;36m[Koperator[m[K<(const _CharT* __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/basic_string.h:6254:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[KDMapCell[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/ios_base.h:46[m[K,
+                 from [01m[K/usr/include/c++/9/ios:42[m[K,
+                 from [01m[K/usr/include/c++/9/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/9/iostream:39[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:54[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/system_error:208:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator<(const std::error_code&, const std::error_code&)[m[K’
+  208 |   [01;36m[Koperator[m[K<(const error_code& __lhs, const error_code& __rhs) noexcept
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/system_error:208:31:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst DMapCell[m[K’ to ‘[01m[Kconst std::error_code&[m[K’
+  208 |   operator<([01;36m[Kconst error_code& __lhs[m[K, const error_code& __rhs) noexcept
+      |             [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/c++/9/system_error:282:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator<(const std::error_condition&, const std::error_condition&)[m[K’
+  282 |   [01;36m[Koperator[m[K<(const error_condition& __lhs,
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/system_error:282:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst DMapCell[m[K’ to ‘[01m[Kconst std::error_condition&[m[K’
+  282 |   operator<([01;36m[Kconst error_condition& __lhs[m[K,
+      |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/tuple:39[m[K,
+                 from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/9/bits/locale_conv.h:41[m[K,
+                 from [01m[K/usr/include/c++/9/locale:43[m[K,
+                 from [01m[K/usr/include/c++/9/iomanip:43[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:12[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/array:262:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, long unsigned int _Nm> bool std::operator<(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)[m[K’
+  262 |     [01;36m[Koperator[m[K<(const array<_Tp, _Nm>& __a, const array<_Tp, _Nm>& __b)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/array:262:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/9/bits/locale_conv.h:41[m[K,
+                 from [01m[K/usr/include/c++/9/locale:43[m[K,
+                 from [01m[K/usr/include/c++/9/iomanip:43[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:12[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/tuple:1432:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... _TElements, class ... _UElements> constexpr bool std::operator<(const std::tuple<_Tps ...>&, const std::tuple<_Elements ...>&)[m[K’
+ 1432 |     [01;36m[Koperator[m[K<(const tuple<_TElements...>& __t,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/tuple:1432:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::tuple<_Tps ...>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/locale_conv.h:41[m[K,
+                 from [01m[K/usr/include/c++/9/locale:43[m[K,
+                 from [01m[K/usr/include/c++/9/iomanip:43[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:12[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/unique_ptr.h:749:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)[m[K’
+  749 |     [01;36m[Koperator[m[K<(const unique_ptr<_Tp, _Dp>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/unique_ptr.h:749:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/locale_conv.h:41[m[K,
+                 from [01m[K/usr/include/c++/9/locale:43[m[K,
+                 from [01m[K/usr/include/c++/9/iomanip:43[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:12[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/unique_ptr.h:760:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)[m[K’
+  760 |     [01;36m[Koperator[m[K<(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/unique_ptr.h:760:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/locale_conv.h:41[m[K,
+                 from [01m[K/usr/include/c++/9/locale:43[m[K,
+                 from [01m[K/usr/include/c++/9/iomanip:43[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:12[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/unique_ptr.h:766:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::operator<(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)[m[K’
+  766 |     [01;36m[Koperator[m[K<(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/unique_ptr.h:766:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/vector:67[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/math_fwd.hpp:26[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:15[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_vector.h:1905:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)[m[K’
+ 1905 |     [01;36m[Koperator[m[K<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:1905:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::vector<_Tp, _Alloc>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/map:61[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/console.h:42[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_map.h:1472:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)[m[K’
+ 1472 |     [01;36m[Koperator[m[K<(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_map.h:1472:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::map<_Key, _Tp, _Compare, _Alloc>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/map:62[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/console.h:42[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_multimap.h:1136:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)[m[K’
+ 1136 |     [01;36m[Koperator[m[K<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_multimap.h:1136:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::multimap<_Key, _Tp, _Compare, _Alloc>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/set:61[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:34[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_set.h:996:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)[m[K’
+  996 |     [01;36m[Koperator[m[K<(const set<_Key, _Compare, _Alloc>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_set.h:996:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::set<_Key, _Compare, _Alloc>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/set:62[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:34[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_multiset.h:981:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)[m[K’
+  981 |     [01;36m[Koperator[m[K<(const multiset<_Key, _Compare, _Alloc>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_multiset.h:981:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::multiset<_Key, _Compare, _Alloc>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/list:63[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:35[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_list.h:2025:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator<(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)[m[K’
+ 2025 |     [01;36m[Koperator[m[K<(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_list.h:2025:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::list<_Tp, _Alloc>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/shared_ptr.h:52[m[K,
+                 from [01m[K/usr/include/c++/9/memory:81[m[K,
+                 from [01m[K/usr/include/boost/config/no_tr1/memory.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1444:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)[m[K’
+ 1444 |     [01;36m[Koperator[m[K<(const __shared_ptr<_Tp, _Lp>& __a,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1444:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp1, _Lp>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/shared_ptr.h:52[m[K,
+                 from [01m[K/usr/include/c++/9/memory:81[m[K,
+                 from [01m[K/usr/include/boost/config/no_tr1/memory.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1455:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)[m[K’
+ 1455 |     [01;36m[Koperator[m[K<(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1455:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/shared_ptr.h:52[m[K,
+                 from [01m[K/usr/include/c++/9/memory:81[m[K,
+                 from [01m[K/usr/include/boost/config/no_tr1/memory.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1463:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)[m[K’
+ 1463 |     [01;36m[Koperator[m[K<(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1463:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+                 from [01m[K/usr/include/boost/config/no_tr1/memory.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:413:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> bool std::operator<(const std::shared_ptr<_Tp>&, const std::shared_ptr<_Tp>&)[m[K’
+  413 |     [01;36m[Koperator[m[K<(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:413:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+                 from [01m[K/usr/include/boost/config/no_tr1/memory.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:423:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::operator<(const std::shared_ptr<_Tp>&, std::nullptr_t)[m[K’
+  423 |     [01;36m[Koperator[m[K<(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:423:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+                 from [01m[K/usr/include/boost/config/no_tr1/memory.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:431:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::operator<(std::nullptr_t, const std::shared_ptr<_Tp>&)[m[K’
+  431 |     [01;36m[Koperator[m[K<(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:431:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/deque:67[m[K,
+                 from [01m[K/usr/include/c++/9/queue:60[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util.hpp:119[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching.hpp:50[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:89[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:8[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/usr/include/c++/9/bits/stl_deque.h:312:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Ref, class _Ptr> bool std::operator<(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)[m[K’
+  312 |     [01;36m[Koperator[m[K<(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_deque.h:312:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::_Deque_iterator<_Tp, _Ref, _Ptr>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/deque:67[m[K,
+                 from [01m[K/usr/include/c++/9/queue:60[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util.hpp:119[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching.hpp:50[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:89[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:8[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/usr/include/c++/9/bits/stl_deque.h:320:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _RefL, class _PtrL, class _RefR, class _PtrR> bool std::operator<(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _RefR, _PtrR>&)[m[K’
+  320 |     [01;36m[Koperator[m[K<(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_deque.h:320:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::_Deque_iterator<_Tp, _Ref, _Ptr>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/deque:67[m[K,
+                 from [01m[K/usr/include/c++/9/queue:60[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util.hpp:119[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching.hpp:50[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:89[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:8[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/usr/include/c++/9/bits/stl_deque.h:2330:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator<(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)[m[K’
+ 2330 |     [01;36m[Koperator[m[K<(const deque<_Tp, _Alloc>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_deque.h:2330:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::deque<_Tp, _Alloc>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/queue:64[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util.hpp:119[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching.hpp:50[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:89[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:8[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/usr/include/c++/9/bits/stl_queue.h:356:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Seq> bool std::operator<(const std::queue<_Tp, _Seq>&, const std::queue<_Tp, _Seq>&)[m[K’
+  356 |     [01;36m[Koperator[m[K<(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_queue.h:356:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:227:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst DMapCell[m[K’ is not derived from ‘[01m[Kconst std::queue<_Tp, _Seq>[m[K’
+  227 |       if ([01;36m[K__a < __b[m[K)
+      |           [01;36m[K~~~~^~~~~[m[K
+make[2]: *** [CMakeFiles/main_node.dir/build.make:63: CMakeFiles/main_node.dir/src/main_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/main_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
