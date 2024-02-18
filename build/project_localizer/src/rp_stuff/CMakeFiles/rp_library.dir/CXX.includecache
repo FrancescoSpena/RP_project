@@ -36,10 +36,6 @@ dmap.h
 grid_map.h
 /home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid_map.h
 
-/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.cpp
-draw_helpers.h
-/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h
-
 /home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h
 opencv2/opencv.hpp
 -

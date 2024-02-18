@@ -1,0 +1,17 @@
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:[m[K In function ‘[01m[Kvoid mapCallBack(const OccupancyGrid&)[m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:40:64:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Ksigned char[m[K’ to ‘[01m[Kconst CellType*[m[K’ {aka ‘[01m[Kconst signed char*[m[K’} [[01;31m[K-fpermissive[m[K]
+   40 |                 std::vector<Vector2i> index = grid_map.ptr2idx([01;31m[Ko[m[K);
+      |                                                                [01;31m[K^[m[K
+      |                                                                [01;31m[K|[m[K
+      |                                                                [01;31m[Ksigned char[m[K
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:56:49:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kconst Vector2i Grid_<CellType_>::ptr2idx(const CellType*) const [with CellType_ = signed char; Vector2i = Eigen::Matrix<int, 2, 1>; Grid_<CellType_>::CellType = signed char][m[K’
+   56 |   inline const Vector2i ptr2idx([01;36m[Kconst CellType* cell[m[K) const {
+      |                                 [01;36m[K~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:40:63:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kconst Vector2i[m[K’ {aka ‘[01m[Kconst Eigen::Matrix<int, 2, 1>[m[K’} to non-scalar type ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >[m[K’ requested
+   40 |                 std::vector<Vector2i> index = [01;31m[Kgrid_map.ptr2idx(o)[m[K;
+      |                                               [01;31m[K~~~~~~~~~~~~~~~~^~~[m[K
+make[2]: *** [CMakeFiles/main_node.dir/build.make:63: CMakeFiles/main_node.dir/src/main_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/main_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

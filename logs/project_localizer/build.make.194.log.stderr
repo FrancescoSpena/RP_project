@@ -1,0 +1,8 @@
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:[m[K In function ‘[01m[Kvoid mapCallBack(const OccupancyGrid&)[m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:64:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kcanvas[m[K’ was not declared in this scope; did you mean ‘[01m[KCanvas[m[K’?
+   64 |         image.draw([01;31m[Kcanvas[m[K);
+      |                    [01;31m[K^~~~~~[m[K
+      |                    [32m[KCanvas[m[K
+make[2]: *** [CMakeFiles/main_node.dir/build.make:63: CMakeFiles/main_node.dir/src/main_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/main_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

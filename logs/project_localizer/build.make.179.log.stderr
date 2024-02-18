@@ -1,0 +1,8 @@
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:[m[K In function ‘[01m[Kvoid mapCallBack(const OccupancyGrid&)[m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:41:22:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kstd::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::size() const [with _Tp = Eigen::Matrix<float, 2, 1>; _Alloc = std::allocator<Eigen::Matrix<float, 2, 1> >; std::vector<_Tp, _Alloc>::size_type = long unsigned int][m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   41 |         if([01;31m[Kobstacles.size[m[K <= 0){
+      |            [01;31m[K~~~~~~~~~~^~~~[m[K
+      |                          [32m[K()[m[K
+make[2]: *** [CMakeFiles/main_node.dir/build.make:63: CMakeFiles/main_node.dir/src/main_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/main_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

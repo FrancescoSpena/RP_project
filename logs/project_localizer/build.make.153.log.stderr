@@ -1,0 +1,7 @@
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:[m[K In function ‘[01m[Kvoid mapCallBack(const OccupancyGrid&)[m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:40:65:[m[K [01;31m[Kerror: [m[Kinvalid type argument of unary ‘[01m[K*[m[K’ (have ‘[01m[Ksigned char[m[K’)
+   40 |                 std::vector<Vector2i> index = grid_map.ptr2idx(*[01;31m[Ko[m[K);
+      |                                                                 [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/main_node.dir/build.make:63: CMakeFiles/main_node.dir/src/main_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/main_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

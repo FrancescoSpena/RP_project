@@ -1,0 +1,129 @@
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:[m[K In function ‘[01m[Kvoid initCallBack(const PoseWithCovarianceStamped&)[m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:58:27:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[KEigen::Transform<float, 2, 1>::TranslationPart[m[K’ {aka ‘[01m[KEigen::Block<Eigen::Matrix<float, 3, 3>, 2, 1, true>[m[K’} and ‘[01m[Kfloat[m[K’)
+   58 |         X.translation() = [01;31m[Kx[m[K, y;
+      |                           [01;31m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:88[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Geometry:11[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:4[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:830:52:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Block<XprType, BlockRows, BlockCols, InnerPanel>& Eigen::Block<XprType, BlockRows, BlockCols, InnerPanel>::operator=(const Eigen::Block<XprType, BlockRows, BlockCols, InnerPanel>&) [with XprType = Eigen::Matrix<float, 3, 3>; int BlockRows = 2; int BlockCols = 1; bool InnerPanel = true][m[K’
+  830 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+      |                                                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:830:52:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+  830 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+      |                                                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:111:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+  111 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(Block)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:830:77:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kfloat[m[K’ to ‘[01m[Kconst Eigen::Block<Eigen::Matrix<float, 3, 3>, 2, 1, true>&[m[K’
+  830 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& operator=([01;36m[Kconst Derived& other[m[K) \
+      |                                                              [01;36m[K~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:830:77:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+  830 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& operator=(const Derived& [01;36m[Kother[m[K) \
+      |                                                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:111:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+  111 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(Block)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:830:52:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>& Eigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>::operator=(const Eigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>&) [with XprType = Eigen::Matrix<float, 3, 3>; int BlockRows = 2; int BlockCols = 1; bool InnerPanel = true][m[K’
+  830 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+      |                                                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:830:52:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+  830 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+      |                                                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:341:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+  341 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl_dense)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:830:77:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kfloat[m[K’ to ‘[01m[Kconst Eigen::internal::BlockImpl_dense<Eigen::Matrix<float, 3, 3>, 2, 1, true, true>&[m[K’
+  830 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& operator=([01;36m[Kconst Derived& other[m[K) \
+      |                                                              [01;36m[K~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:830:77:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+  830 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& operator=(const Derived& [01;36m[Kother[m[K) \
+      |                                                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:341:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+  341 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl_dense)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:445[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Geometry:11[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:4[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/Assign.h:55:30:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KDerived& Eigen::MatrixBase<Derived>::operator=(const Eigen::MatrixBase<Derived>&) [with Derived = Eigen::Block<Eigen::Matrix<float, 3, 3>, 2, 1, true>][m[K’
+   55 | EIGEN_STRONG_INLINE Derived& [01;36m[KMatrixBase<Derived>[m[K::operator=(const MatrixBase& other)
+      |                              [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Assign.h:55:79:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kfloat[m[K’ to ‘[01m[Kconst Eigen::MatrixBase<Eigen::Block<Eigen::Matrix<float, 3, 3>, 2, 1, true> >&[m[K’
+   55 | EIGEN_STRONG_INLINE Derived& MatrixBase<Derived>::operator=([01;36m[Kconst MatrixBase& other[m[K)
+      |                                                             [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:436[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Geometry:11[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:4[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:146:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Derived& Eigen::MatrixBase<Derived>::operator=(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = OtherDerived; Derived = Eigen::Block<Eigen::Matrix<float, 3, 3>, 2, 1, true>][m[K’
+  146 |     Derived& [01;36m[Koperator[m[K=(const DenseBase<OtherDerived>& other);
+      |              [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:146:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:58:27:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::DenseBase<Derived>[m[K’ and ‘[01m[Kfloat[m[K’
+   58 |         X.translation() = [01;36m[Kx[m[K, y;
+      |                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:436[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Geometry:11[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:4[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:150:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Derived& Eigen::MatrixBase<Derived>::operator=(const Eigen::EigenBase<OtherDerived>&) [with OtherDerived = OtherDerived; Derived = Eigen::Block<Eigen::Matrix<float, 3, 3>, 2, 1, true>][m[K’
+  150 |     Derived& [01;36m[Koperator[m[K=(const EigenBase<OtherDerived>& other);
+      |              [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:150:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:58:27:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::EigenBase<Derived>[m[K’ and ‘[01m[Kfloat[m[K’
+   58 |         X.translation() = [01;36m[Kx[m[K, y;
+      |                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:436[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Geometry:11[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:4[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:154:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Derived& Eigen::MatrixBase<Derived>::operator=(const Eigen::ReturnByValue<OtherDerived>&) [with OtherDerived = OtherDerived; Derived = Eigen::Block<Eigen::Matrix<float, 3, 3>, 2, 1, true>][m[K’
+  154 |     Derived& [01;36m[Koperator[m[K=(const ReturnByValue<OtherDerived>& other);
+      |              [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:154:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:58:27:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::ReturnByValue<Derived>[m[K’ and ‘[01m[Kfloat[m[K’
+   58 |         X.translation() = [01;36m[Kx[m[K, y;
+      |                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:469[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Geometry:11[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:4[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/MapBase.h:290:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KDerived& Eigen::MapBase<Derived, 1>::operator=(const Eigen::MapBase<Derived, 1>&) [with Derived = Eigen::Block<Eigen::Matrix<float, 3, 3>, 2, 1, true>][m[K’
+  290 |     Derived& [01;36m[Koperator[m[K=(const MapBase& other)
+      |              [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/MapBase.h:290:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kfloat[m[K’ to ‘[01m[Kconst Eigen::MapBase<Eigen::Block<Eigen::Matrix<float, 3, 3>, 2, 1, true>, 1>&[m[K’
+  290 |     Derived& operator=([01;36m[Kconst MapBase& other[m[K)
+      |                        [01;36m[K~~~~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:88[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Geometry:11[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:4[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:8[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:830:52:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>& Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>::operator=(const Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>&) [with XprType = Eigen::Matrix<float, 3, 3>; int BlockRows = 2; int BlockCols = 1; bool InnerPanel = true][m[K’
+  830 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+      |                                                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:830:52:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+  830 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+      |                                                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:161:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+  161 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:830:77:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kfloat[m[K’ to ‘[01m[Kconst Eigen::BlockImpl<Eigen::Matrix<float, 3, 3>, 2, 1, true, Eigen::Dense>&[m[K’
+  830 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& operator=([01;36m[Kconst Derived& other[m[K) \
+      |                                                              [01;36m[K~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:830:77:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+  830 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& operator=(const Derived& [01;36m[Kother[m[K) \
+      |                                                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:161:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+  161 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/main_node.dir/build.make:63: CMakeFiles/main_node.dir/src/main_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/main_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

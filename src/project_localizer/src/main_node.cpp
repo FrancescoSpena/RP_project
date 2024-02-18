@@ -12,6 +12,7 @@
 
 DMap dmap(0,0);
 DMapLocalizer localizer;
+Grid_<int8_t> grid_map(0,0);
 
 bool map_received = false;
 bool init_pose_received = false; 
@@ -20,29 +21,70 @@ bool init_pose_received = false;
 void mapCallBack(const nav_msgs::OccupancyGrid& map){
     if(map_received == false){
         std::cerr << "Map received" << std::endl;
-        std::vector<Vector2i> obstacles;
+        std::vector<Vector2f> obstacles;
         
-        auto& width = map.info.width;
-        auto& height = map.info.height;
-        auto& resolution = map.info.resolution;
+        uint32_t width = map.info.width;
+        uint32_t height = map.info.height;
+        float resolution = map.info.resolution;
 
-        dmap.resize(height,width);
+        std::cerr << "width = " << width << std::endl << "height = " << height << std::endl;
         
-        Grid_<int8_t> grid_map(height,width);
+        grid_map.resize(height,width);
         grid_map.cells = map.data;
-        
-        //Extract a obstacles points --> points < 127
-        //add to obstacles with function ptr2idx
+
+        // Canvas canvas;
+        // grid_map.draw(canvas);
+        // showCanvas(canvas,0);
+
+
+        //Extract a obstacles points
         for(const auto& o: grid_map.cells){
-            if(o < 127){
-                obstacles.push_back(grid_map.ptr2idx(&o));
+            //std::cerr << "o = " << static_cast<int>(o) << std::endl;
+            if(o == 0){
+                Vector2i index = grid_map.ptr2idx(&o);
+                obstacles.push_back({static_cast<float>(index(0)), static_cast<float>(index(1))});
             }
         }
+
+        //std::cerr << "Num obstacles = " << obstacles.size() << std::endl;
+
+        // for (int i=0; i<10; ++i) {
+        //     obstacles.push_back(Vector2f::Random()*100);
+        // }
+
+        if(obstacles.size() <= 0){
+            std::cerr << "Not obstacles" << std::endl;
+            return; 
+        }
+
         
-        //Compute a dmap
-        int dmax2 = pow(1 / resolution, 2);
-        int ops = dmap.compute(obstacles,dmax2);
-        map_received = true;    
+        //std::cerr << "size obstacles = " << obstacles.size() << std::endl;
+
+        localizer.setMap(obstacles,resolution,10);
+        
+        
+        std::cerr << "localizer ready" << std::endl;
+        //std::cerr << "rows:  " << localizer.distances.rows << " cols: " << localizer.distances.cols << std::endl;
+
+        const auto& distances = localizer.distances;
+        Grid_<uint8_t> image(distances.rows, distances.cols);
+
+        float f_min=1e9;
+        float f_max=0;
+        for(auto& f: distances.cells) {
+            f_min=std::min(f, f_min);
+            f_max=std::max(f, f_max);
+        }
+        float scale=255./(f_max-f_min);
+
+        // 2. copy the (normalized) distances
+        for (size_t i=0; i<distances.cells.size(); ++i) {
+            image.cells[i]=scale  * (distances.cells[i] - f_min);
+        }
+
+        Canvas canvas;
+        image.draw(canvas);
+        showCanvas(canvas,0);
     }
     std::cerr << "Dmap ready" << std::endl;
 }
@@ -51,6 +93,15 @@ void initCallBack(const geometry_msgs::PoseWithCovarianceStamped& init){
     if(map_received == true && init_pose_received == false){
         std::cerr << "Init pose received" << std::endl;
 
+        //Extract values from msg and convert
+        //from world to grid
+        
+        Isometry2f X=Eigen::Isometry2f::Identity();
+        float x = init.pose.pose.position.x;
+        float y = init.pose.pose.position.y;
+        
+        X.translation() << x, y;
+        
         init_pose_received = true;
     }
 }
@@ -75,7 +126,6 @@ int main(int argc, char** argv){
     ros::Subscriber sub = n_map.subscribe<const nav_msgs::OccupancyGrid&>(map_topic_name, 10, mapCallBack);
     ros::Subscriber sub_init_pose = n_init_pose.subscribe<const geometry_msgs::PoseWithCovarianceStamped&>(init_topic_name, 10, initCallBack);
     ros::Subscriber sub_laser_scan = n_laser_scan.subscribe<const sensor_msgs::LaserScan&>(laser_topic_name, 10, laserCallBack);
-
 
     ros::spin();
     return 0;
