@@ -40,7 +40,7 @@ struct GridMapping {
 };
 
 // grid mapping class
-struct GridMap: public Grid_<uint8_t>, public GridMapping{
+struct GridMap: public Grid_<int8_t>, public GridMapping{
 
   inline const Vector2f center() const {
     return grid2world(Vector2f(cols/2, rows/2));

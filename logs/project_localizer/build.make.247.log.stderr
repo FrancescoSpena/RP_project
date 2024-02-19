@@ -1,0 +1,17 @@
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:[m[K In function ‘[01m[Kvoid mapCallBack(const OccupancyGrid&)[m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:46:55:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KEigen::Matrix<int, 2, 1>::cast<float>(Vector2i&)[m[K’
+   46 |                 Vector2f obs = index.cast<float>(index[01;31m[K)[m[K;
+      |                                                       [01;31m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:125[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Core:436[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Geometry:11[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:4[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:11[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/../plugins/CommonCwiseUnaryOps.h:62:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktypename Eigen::MatrixBase<Derived>::CastXpr<NewType>::Type Eigen::MatrixBase<Derived>::cast() const [with NewType = float; Derived = Eigen::Matrix<int, 2, 1>; typename Eigen::MatrixBase<Derived>::CastXpr<NewType>::Type = const Eigen::CwiseUnaryOp<Eigen::internal::scalar_cast_op<int, float>, const Eigen::Matrix<int, 2, 1> >][m[K’
+   62 | [01;36m[Kcast[m[K() const
+      | [01;36m[K^~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/../plugins/CommonCwiseUnaryOps.h:62:1:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+make[2]: *** [CMakeFiles/main_node.dir/build.make:63: CMakeFiles/main_node.dir/src/main_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/main_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

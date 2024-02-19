@@ -1,0 +1,7 @@
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid_map.cpp:[m[K In constructor ‘[01m[KGridMap::GridMap(float, int, int)[m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid_map.cpp:5:3:[m[K [01;31m[Kerror: [m[Ktype ‘[01m[KGrid_<unsigned char>[m[K’ is not a direct base of ‘[01m[KGridMap[m[K’
+    5 |   [01;31m[KGrid_<uint8_t>[m[K(rows_, cols_){
+      |   [01;31m[K^~~~~~~~~~~~~~[m[K
+make[2]: *** [src/rp_stuff/CMakeFiles/rp_library.dir/build.make:63: src/rp_stuff/CMakeFiles/rp_library.dir/grid_map.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1478: src/rp_stuff/CMakeFiles/rp_library.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

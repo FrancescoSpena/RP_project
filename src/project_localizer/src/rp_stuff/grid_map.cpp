@@ -2,7 +2,7 @@
 using namespace std;
 
 GridMap::GridMap(float resolution_, int rows_, int cols_):
-  Grid_<uint8_t>(rows_, cols_){
+  Grid_<int8_t>(rows_, cols_){
   reset(Vector2f(0,0), resolution_);
 }
 

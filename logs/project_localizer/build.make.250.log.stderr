@@ -1,0 +1,11 @@
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:[m[K In function ‘[01m[Kvoid mapCallBack(const OccupancyGrid&)[m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:46:30:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K<<[m[K’ token
+   46 |                 Vector2f obs [01;31m[K<<[m[K static_cast<float>index(0), static_cast<float>index(1);
+      |                              [01;31m[K^~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:47:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kobs[m[K’ was not declared in this scope; did you mean ‘[01m[Kabs[m[K’?
+   47 |                 obstacles.push_back([01;31m[Kobs[m[K);
+      |                                     [01;31m[K^~~[m[K
+      |                                     [32m[Kabs[m[K
+make[2]: *** [CMakeFiles/main_node.dir/build.make:63: CMakeFiles/main_node.dir/src/main_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/main_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

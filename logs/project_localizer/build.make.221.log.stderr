@@ -1,0 +1,13 @@
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:[m[K In function ‘[01m[Kvoid mapCallBack(const OccupancyGrid&)[m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:79:32:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst Vector2f&[m[K’ {aka ‘[01m[Kconst Eigen::Matrix<float, 2, 1>&[m[K’} from expression of type ‘[01m[Kint[m[K’
+   79 |             drawCircle(canvas, [01;31m[K1[m[K, 3, 255);
+      |                                [01;31m[K^[m[K
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:8[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:11[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h:9:54:[m[K [01;36m[Knote: [m[Kin passing argument 2 of ‘[01m[Kvoid drawCircle(Canvas&, const Vector2f&, int, uint8_t)[m[K’
+    9 | void drawCircle(Canvas& dest, [01;36m[Kconst Eigen::Vector2f& center[m[K, int radius, uint8_t color);
+      |                               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+make[2]: *** [CMakeFiles/main_node.dir/build.make:63: CMakeFiles/main_node.dir/src/main_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/main_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

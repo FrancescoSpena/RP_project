@@ -1,5 +1,8 @@
 #include <ros/ros.h>
 #include <iostream>
+#include <cstdlib>
+#include <cmath>
+#include <fstream>
 
 #include <nav_msgs/OccupancyGrid.h> 
 #include <sensor_msgs/LaserScan.h>
@@ -12,7 +15,6 @@
 
 DMap dmap(0,0);
 DMapLocalizer localizer;
-Grid_<int8_t> grid_map(0,0);
 
 bool map_received = false;
 bool init_pose_received = false; 
@@ -27,64 +29,63 @@ void mapCallBack(const nav_msgs::OccupancyGrid& map){
         uint32_t height = map.info.height;
         float resolution = map.info.resolution;
 
-        std::cerr << "width = " << width << std::endl << "height = " << height << std::endl;
+        std::cerr << "    width = " << width << std::endl << "    height = " << height << std::endl;
         
-        grid_map.resize(height,width);
+        GridMap grid_map(resolution,height,width);
         grid_map.cells = map.data;
 
         // Canvas canvas;
         // grid_map.draw(canvas);
         // showCanvas(canvas,0);
 
-
         //Extract a obstacles points
         for(const auto& o: grid_map.cells){
-            //std::cerr << "o = " << static_cast<int>(o) << std::endl;
-            if(o == 0){
+            if(o == 100){
+                //Convert the occupated cell in grid coordinates 
                 Vector2i index = grid_map.ptr2idx(&o);
-                obstacles.push_back({static_cast<float>(index(0)), static_cast<float>(index(1))});
+                //Extract the value from the cell
+                int8_t val = grid_map(index(0),index(1));
+                Vector2f obs(static_cast<float>(val), static_cast<float>(val));
+                //transform point from world to grid
+                obs = grid_map.world2grid(obs);
+                obstacles.push_back(obs);
             }
         }
 
-        //std::cerr << "Num obstacles = " << obstacles.size() << std::endl;
-
-        // for (int i=0; i<10; ++i) {
-        //     obstacles.push_back(Vector2f::Random()*100);
-        // }
+        std::cerr << "num obstacles = " << obstacles.size() << std::endl;
 
         if(obstacles.size() <= 0){
             std::cerr << "Not obstacles" << std::endl;
             return; 
         }
 
-        
-        //std::cerr << "size obstacles = " << obstacles.size() << std::endl;
-
-        localizer.setMap(obstacles,resolution,10);
-        
-        
+        localizer.setMap(obstacles,resolution,1);
         std::cerr << "localizer ready" << std::endl;
-        //std::cerr << "rows:  " << localizer.distances.rows << " cols: " << localizer.distances.cols << std::endl;
+        std::cerr << "  rows:  " << localizer.distances.rows << std::endl << "  cols: " << localizer.distances.cols << std::endl;
 
-        const auto& distances = localizer.distances;
-        Grid_<uint8_t> image(distances.rows, distances.cols);
+        // // Canvas canvas;
+        // const auto& distances = localizer.distances;
+        // Grid_<uint8_t> obstacle_image(distances.rows, distances.cols);
+        
+        // float f_min=1e9;
+        // float f_max=0;
+        // for(auto& f: distances.cells) {
+        //     f_min=std::min(f, f_min);
+        //     f_max=std::max(f, f_max);
+        // }
+        // float scale=255./(f_max-f_min);
 
-        float f_min=1e9;
-        float f_max=0;
-        for(auto& f: distances.cells) {
-            f_min=std::min(f, f_min);
-            f_max=std::max(f, f_max);
-        }
-        float scale=255./(f_max-f_min);
-
-        // 2. copy the (normalized) distances
-        for (size_t i=0; i<distances.cells.size(); ++i) {
-            image.cells[i]=scale  * (distances.cells[i] - f_min);
-        }
-
-        Canvas canvas;
-        image.draw(canvas);
-        showCanvas(canvas,0);
+        // // 2. copy the (normalized) distances
+        // for (size_t i=0; i<distances.cells.size(); ++i) {
+        //     obstacle_image.cells[i]=scale  * (distances.cells[i] - f_min);
+        // }
+        
+        
+        // obstacle_image.draw(canvas);
+        
+        // showCanvas(canvas,0);
+        
+        map_received = true;
     }
     std::cerr << "Dmap ready" << std::endl;
 }
