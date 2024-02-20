@@ -1,0 +1,16 @@
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:[m[K In function ‘[01m[Kvoid initCallBack(const PoseWithCovarianceStamped&)[m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:100:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kinit[m[K’ does not name a type
+  100 |         using position = [01;31m[Kinit[m[K.pose.pose.position;
+      |                          [01;31m[K^~~~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:101:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kinit[m[K’ does not name a type
+  101 |         using orientation = [01;31m[Kinit[m[K.pose.pose.orientation;
+      |                             [01;31m[K^~~~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:104:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kposition[m[K’ was not declared in this scope
+  104 |         float x =[01;31m[Kposition[m[K.x;
+      |                  [01;31m[K^~~~~~~~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:107:23:[m[K [01;31m[Kerror: [m[K‘[01m[Korientation[m[K’ was not declared in this scope
+  107 |         float angle = [01;31m[Korientation[m[K.w;
+      |                       [01;31m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/main_node.dir/build.make:63: CMakeFiles/main_node.dir/src/main_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/main_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

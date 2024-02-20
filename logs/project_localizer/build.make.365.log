@@ -1,0 +1,26 @@
+[ 36%] Built target rp_library
+[35m[1mScanning dependencies of target main_node[0m
+[ 45%] Built target grid_main
+[ 54%] Built target dmap_localizer_test
+[ 63%] Built target test_grid_map
+[ 72%] Built target rp_simulator
+[ 81%] Built target dmap_test_in_class
+[ 86%] [32mBuilding CXX object CMakeFiles/main_node.dir/src/main_node.cpp.o[0m
+[ 95%] Built target dmap_grid_localizer_test
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:18:9:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KGridMap::GridMap()[m[K’
+   18 | GridMap [01;31m[Kgrid_map[m[K;
+      |         [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:12[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid_map.h:53:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KGridMap::GridMap(float, int, int)[m[K’
+   53 |   [01;36m[KGridMap[m[K(float resolution, int rows=0, int cols=0);
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid_map.h:53:3:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid_map.h:43:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KGridMap::GridMap(const GridMap&)[m[K’
+   43 | struct [01;36m[KGridMap[m[K: public Grid_<int8_t>, public GridMapping{
+      |        [01;36m[K^~~~~~~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid_map.h:43:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid_map.h:43:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KGridMap::GridMap(GridMap&&)[m[K’
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid_map.h:43:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+make[2]: *** [CMakeFiles/main_node.dir/build.make:63: CMakeFiles/main_node.dir/src/main_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/main_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

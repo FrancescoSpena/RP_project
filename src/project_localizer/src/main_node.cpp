@@ -15,15 +15,17 @@
 
 DMap dmap(0,0);
 DMapLocalizer localizer;
+GridMap grid_map(0.1,1,1);
 
 bool map_received = false;
 bool init_pose_received = false; 
+bool first_scan = true; 
 
 
 void mapCallBack(const nav_msgs::OccupancyGrid& map){
     if(map_received == false){
         std::cerr << "Map received" << std::endl;
-        std::vector<Vector2f> obstacles;
+        std::vector<Vector2i> obstacles;
         
         uint32_t width = map.info.width;
         uint32_t height = map.info.height;
@@ -31,42 +33,58 @@ void mapCallBack(const nav_msgs::OccupancyGrid& map){
 
         std::cerr << "    width = " << width << std::endl << "    height = " << height << std::endl;
         
-        GridMap grid_map(resolution,height,width);
+        grid_map.resize(height,width);
         grid_map.cells = map.data;
 
         // Canvas canvas;
         // grid_map.draw(canvas);
         // showCanvas(canvas,0);
 
-        //Extract a obstacles points
-        for(const auto& o: grid_map.cells){
-            if(o == 100){
+        // //Extract a obstacles points
+        int i = 0;
+        for(int j=0; j < grid_map.cells.size(); j++){
+            if(grid_map.cells[j] == 100){
                 //Convert the occupated cell in grid coordinates 
-                Vector2i index = grid_map.ptr2idx(&o);
-                //Extract the value from the cell
-                int8_t val = grid_map(index(0),index(1));
-                Vector2f obs(static_cast<float>(val), static_cast<float>(val));
-                //transform point from world to grid
-                obs = grid_map.world2grid(obs);
-                obstacles.push_back(obs);
+                Vector2i index = grid_map.ptr2idx(&grid_map.cells[j]);
+                //Add the obstacles to list
+                obstacles.push_back(index);
+                ++i;
             }
         }
 
-        std::cerr << "num obstacles = " << obstacles.size() << std::endl;
+        std::cerr << "size obs = " << i << std::endl;
 
-        if(obstacles.size() <= 0){
-            std::cerr << "Not obstacles" << std::endl;
-            return; 
+        int dmax_2 = pow(1/resolution,2);
+        DMap dmap(grid_map.rows,grid_map.cols); 
+        dmap.clear();
+        dmap.compute(obstacles,dmax_2);
+
+        // std::cerr << "num obstacles = " << obstacles.size() << std::endl;
+
+        // if(obstacles.size() <= 0){
+        //     std::cerr << "Not obstacles" << std::endl;
+        //     return; 
+        // }
+
+        
+        dmap.copyTo(localizer.distances,dmax_2);
+        for(auto& f: localizer.distances.cells){
+            f=sqrt(f)*grid_map.resolution();
         }
 
-        localizer.setMap(obstacles,resolution,1);
+        localizer.distances.colDerivative(localizer.distances_dc);
+        localizer.distances.rowDerivative(localizer.distances_dr);
+
+
         std::cerr << "localizer ready" << std::endl;
         std::cerr << "  rows:  " << localizer.distances.rows << std::endl << "  cols: " << localizer.distances.cols << std::endl;
 
-        // // Canvas canvas;
+        
+        // Canvas canvas;
         // const auto& distances = localizer.distances;
         // Grid_<uint8_t> obstacle_image(distances.rows, distances.cols);
         
+    
         // float f_min=1e9;
         // float f_max=0;
         // for(auto& f: distances.cells) {
@@ -82,7 +100,6 @@ void mapCallBack(const nav_msgs::OccupancyGrid& map){
         
         
         // obstacle_image.draw(canvas);
-        
         // showCanvas(canvas,0);
         
         map_received = true;
@@ -94,14 +111,15 @@ void initCallBack(const geometry_msgs::PoseWithCovarianceStamped& init){
     if(map_received == true && init_pose_received == false){
         std::cerr << "Init pose received" << std::endl;
 
-        //Extract values from msg and convert
-        //from world to grid
-        
         Isometry2f X=Eigen::Isometry2f::Identity();
         float x = init.pose.pose.position.x;
         float y = init.pose.pose.position.y;
+        float angle = init.pose.pose.orientation.w;
         
         X.translation() << x, y;
+        X.linear()=Eigen::Rotation2Df(angle).matrix(); 
+
+        localizer.X=X;
         
         init_pose_received = true;
     }
@@ -110,6 +128,24 @@ void initCallBack(const geometry_msgs::PoseWithCovarianceStamped& init){
 void laserCallBack(const sensor_msgs::LaserScan& scan){
     if(map_received == true && init_pose_received == true){
         std::cerr << "Scan received" << std::endl;
+        std::vector<Vector2f> scan_endpoints; 
+        for(size_t i=0; i < scan.ranges.size(); ++i){
+            float alpha = scan.angle_min + i * scan.angle_increment; 
+            float r = scan.ranges[i];
+            if(r < scan.range_min || r > scan.range_max)
+                continue;
+            scan_endpoints.push_back(Vector2f(r*cos(alpha),r*sin(alpha)));
+        }
+
+        Canvas canvas;
+        float angle = scan.angle_min; 
+        localizer.localize(scan_endpoints,10);
+        grid_map.draw(canvas);
+        localizer.distances.draw(canvas,true);
+        for(const auto& ep: scan_endpoints){
+            drawCircle(canvas, grid_map.world2grid(localizer.X*ep), 3, 255);
+        }
+        showCanvas(canvas,1);
     }
     return;
 }
