@@ -68,7 +68,7 @@ int main(int argc, char** argv) {
     if (show_obstacles)
       obstacle_image.draw(canvas, true);
     else
-      distances.draw(canvas, true);
+      //distances.draw(canvas, true);
     for (const auto& m: obstacles) {
       Vector2f m_hat=localizer.X*m;
       Vector2f m_hat_grid=grid_map.world2grid(m_hat);

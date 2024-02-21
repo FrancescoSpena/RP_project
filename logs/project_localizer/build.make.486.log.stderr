@@ -1,0 +1,8 @@
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:[m[K In function ‘[01m[Kvoid mapCallBack(const OccupancyGrid&)[m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:47:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct GridMap[m[K’ has no member named ‘[01m[Kat[m[K’; did you mean ‘[01m[Kcast[m[K’?
+   47 |                 if(grid_map.[01;31m[Kat[m[K(r,c) < 127){
+      |                             [01;31m[K^~[m[K
+      |                             [32m[Kcast[m[K
+make[2]: *** [CMakeFiles/main_node.dir/build.make:63: CMakeFiles/main_node.dir/src/main_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/main_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

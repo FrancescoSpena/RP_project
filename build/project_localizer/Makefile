@@ -843,32 +843,32 @@ dmap_grid_localizer_test/fast:
 	$(MAKE) -f src/rp_stuff/CMakeFiles/dmap_grid_localizer_test.dir/build.make src/rp_stuff/CMakeFiles/dmap_grid_localizer_test.dir/build
 .PHONY : dmap_grid_localizer_test/fast
 
-src/main_node_old.o: src/main_node_old.cpp.o
+src/main_node.o: src/main_node.cpp.o
 
-.PHONY : src/main_node_old.o
+.PHONY : src/main_node.o
 
 # target to build an object file
-src/main_node_old.cpp.o:
-	$(MAKE) -f CMakeFiles/main_node.dir/build.make CMakeFiles/main_node.dir/src/main_node_old.cpp.o
-.PHONY : src/main_node_old.cpp.o
+src/main_node.cpp.o:
+	$(MAKE) -f CMakeFiles/main_node.dir/build.make CMakeFiles/main_node.dir/src/main_node.cpp.o
+.PHONY : src/main_node.cpp.o
 
-src/main_node_old.i: src/main_node_old.cpp.i
+src/main_node.i: src/main_node.cpp.i
 
-.PHONY : src/main_node_old.i
+.PHONY : src/main_node.i
 
 # target to preprocess a source file
-src/main_node_old.cpp.i:
-	$(MAKE) -f CMakeFiles/main_node.dir/build.make CMakeFiles/main_node.dir/src/main_node_old.cpp.i
-.PHONY : src/main_node_old.cpp.i
+src/main_node.cpp.i:
+	$(MAKE) -f CMakeFiles/main_node.dir/build.make CMakeFiles/main_node.dir/src/main_node.cpp.i
+.PHONY : src/main_node.cpp.i
 
-src/main_node_old.s: src/main_node_old.cpp.s
+src/main_node.s: src/main_node.cpp.s
 
-.PHONY : src/main_node_old.s
+.PHONY : src/main_node.s
 
 # target to generate assembly for a file
-src/main_node_old.cpp.s:
-	$(MAKE) -f CMakeFiles/main_node.dir/build.make CMakeFiles/main_node.dir/src/main_node_old.cpp.s
-.PHONY : src/main_node_old.cpp.s
+src/main_node.cpp.s:
+	$(MAKE) -f CMakeFiles/main_node.dir/build.make CMakeFiles/main_node.dir/src/main_node.cpp.s
+.PHONY : src/main_node.cpp.s
 
 # Help Target
 help:
@@ -935,9 +935,9 @@ help:
 	@echo "... dmap_test_in_class"
 	@echo "... rp_simulator"
 	@echo "... dmap_grid_localizer_test"
-	@echo "... src/main_node_old.o"
-	@echo "... src/main_node_old.i"
-	@echo "... src/main_node_old.s"
+	@echo "... src/main_node.o"
+	@echo "... src/main_node.i"
+	@echo "... src/main_node.s"
 .PHONY : help
 
 

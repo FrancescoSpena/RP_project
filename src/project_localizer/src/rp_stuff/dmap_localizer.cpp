@@ -78,7 +78,7 @@ void DMapLocalizer::setMap(const GridMap& grid_map,
   std::vector<Vector2i> grid_obstacles;
   for (int r=0; r<grid_map.rows; ++r)
     for (int c=0; c<grid_map.cols; ++c)
-      if (grid_map(r,c)<occ_threshold) {
+      if (grid_map(r,c) == occ_threshold) {
         grid_obstacles.push_back(Vector2i(c,r));
       }
 
