@@ -1,0 +1,91 @@
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:[m[K In function ‘[01m[Kvoid laserCallBack(const LaserScan&)[m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:108:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kobstacles[m[K’ was not declared in this scope; did you mean ‘[01m[Kobstack[m[K’?
+  108 |         for(int i=0; i < [01;31m[Kobstacles[m[K.size(); ++i){
+      |                          [01;31m[K^~~~~~~~~[m[K
+      |                          [32m[Kobstack[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:123:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kbegin[m[K’ was not declared in this scope
+  123 |             for(const auto& m: localizer.[01;31m[Kdistances[m[K){
+      |                                          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:123:42:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/usr/include/c++/9/string:54[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/range_access.h:105:37:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::begin[m[K’
+  105 |   template<typename _Tp> const _Tp* [01;36m[Kbegin[m[K(const valarray<_Tp>&);
+      |                                     [01;36m[K^~~~~[m[K
+In file included from [01m[K/usr/include/boost/mpl/list/aux_/begin_end.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/mpl/list/list0.hpp:27[m[K,
+                 from [01m[K/usr/include/boost/mpl/list/list10.hpp:18[m[K,
+                 from [01m[K/usr/include/boost/mpl/list/list20.hpp:18[m[K,
+                 from [01m[K/usr/include/boost/mpl/list.hpp:36[m[K,
+                 from [01m[K/usr/include/boost/math/policies/policy.hpp:9[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/boost/mpl/begin_end_fwd.hpp:22:38:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::mpl::begin[m[K’
+   22 | template< typename Sequence > struct [01;36m[Kbegin[m[K;
+      |                                      [01;36m[K^~~~~[m[K
+In file included from [01m[K/usr/include/boost/range/functions.hpp:18[m[K,
+                 from [01m[K/usr/include/boost/range/iterator_range_core.hpp:38[m[K,
+                 from [01m[K/usr/include/boost/lexical_cast.hpp:30[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/transport_hints.h:34[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/subscribe_options.h:33[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/node_handle.h:42[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/boost/range/begin.hpp:114:61:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::range_adl_barrier::begin[m[K’
+  114 | inline BOOST_DEDUCED_TYPENAME range_iterator<const T>::type [01;36m[Kbegin[m[K( const T& r )
+      |                                                             [01;36m[K^~~~~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:123:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kend[m[K’ was not declared in this scope
+  123 |             for(const auto& m: localizer.[01;31m[Kdistances[m[K){
+      |                                          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:123:42:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/usr/include/c++/9/string:54[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/range_access.h:107:37:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::end[m[K’
+  107 |   template<typename _Tp> const _Tp* [01;36m[Kend[m[K(const valarray<_Tp>&);
+      |                                     [01;36m[K^~~[m[K
+In file included from [01m[K/usr/include/boost/mpl/list/aux_/begin_end.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/mpl/list/list0.hpp:27[m[K,
+                 from [01m[K/usr/include/boost/mpl/list/list10.hpp:18[m[K,
+                 from [01m[K/usr/include/boost/mpl/list/list20.hpp:18[m[K,
+                 from [01m[K/usr/include/boost/mpl/list.hpp:36[m[K,
+                 from [01m[K/usr/include/boost/math/policies/policy.hpp:9[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/boost/mpl/begin_end_fwd.hpp:23:38:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::mpl::end[m[K’
+   23 | template< typename Sequence > struct [01;36m[Kend[m[K;
+      |                                      [01;36m[K^~~[m[K
+In file included from [01m[K/usr/include/boost/range/functions.hpp:19[m[K,
+                 from [01m[K/usr/include/boost/range/iterator_range_core.hpp:38[m[K,
+                 from [01m[K/usr/include/boost/lexical_cast.hpp:30[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/transport_hints.h:34[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/subscribe_options.h:33[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/node_handle.h:42[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:1[m[K:
+[01m[K/usr/include/boost/range/end.hpp:108:61:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::range_adl_barrier::end[m[K’
+  108 | inline BOOST_DEDUCED_TYPENAME range_iterator<const T>::type [01;36m[Kend[m[K( const T& r )
+      |                                                             [01;36m[K^~~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:134:42:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KGrid_<float>[m[K’ to ‘[01m[Kconst std::vector<Eigen::Matrix<float, 2, 1> >&[m[K’
+  134 |             localizer.localize([01;31m[Klocalizer.distances[m[K,1);
+      |                                [01;31m[K~~~~~~~~~~^~~~~~~~~[m[K
+      |                                          [01;31m[K|[m[K
+      |                                          [01;31m[KGrid_<float>[m[K
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:13[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap_localizer.h:36:46:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kbool DMapLocalizer::localize(const std::vector<Eigen::Matrix<float, 2, 1> >&, int)[m[K’
+   36 |   bool localize([01;36m[Kconst std::vector<Vector2f>& measurements[m[K,
+      |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/main_node.dir/build.make:63: CMakeFiles/main_node.dir/src/main_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/main_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

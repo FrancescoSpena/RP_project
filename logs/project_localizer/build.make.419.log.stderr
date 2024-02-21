@@ -1,0 +1,15 @@
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:[m[K In function ‘[01m[Kvoid laserCallBack(const LaserScan&)[m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:92:20:[m[K [01;31m[Kerror: [m[K‘[01m[KRotation2Df[m[K’ was not declared in this scope; did you mean ‘[01m[KEigen::Rotation2Df[m[K’?
+   92 |         X.linear()=[01;31m[KRotation2Df[m[K(0.1).matrix();
+      |                    [01;31m[K^~~~~~~~~~~[m[K
+      |                    [32m[KEigen::Rotation2Df[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:41[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:4[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:11[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:165:27:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::Rotation2Df[m[K’ declared here
+  165 | typedef Rotation2D<float> [01;36m[KRotation2Df[m[K;
+      |                           [01;36m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/main_node.dir/build.make:63: CMakeFiles/main_node.dir/src/main_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/main_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

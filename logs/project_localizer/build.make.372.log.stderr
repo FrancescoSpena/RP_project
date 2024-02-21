@@ -1,0 +1,108 @@
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:[m[K In function ‘[01m[Kvoid laserCallBack(const LaserScan&)[m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:146:32:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >[m[K’ to ‘[01m[Kconst std::vector<Eigen::Matrix<float, 2, 1> >&[m[K’
+  146 |             localizer.localize([01;31m[Kobstacles[m[K,1);
+      |                                [01;31m[K^~~~~~~~~[m[K
+      |                                [01;31m[K|[m[K
+      |                                [01;31m[Kstd::vector<Eigen::Matrix<int, 2, 1> >[m[K
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:13[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap_localizer.h:36:46:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kbool DMapLocalizer::localize(const std::vector<Eigen::Matrix<float, 2, 1> >&, int)[m[K’
+   36 |   bool localize([01;36m[Kconst std::vector<Vector2f>& measurements[m[K,
+      |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:439[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Geometry:11[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:4[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:11[m[K:
+/usr/include/eigen3/Eigen/src/Core/Product.h: In instantiation of ‘[01m[Kstruct Eigen::internal::traits<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >[m[K’:
+[01m[K/usr/include/eigen3/Eigen/src/Core/Product.h:115:7:[m[K   required from ‘[01m[Kclass Eigen::internal::dense_product_base<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0, 3>[m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/Product.h:147:7:[m[K   required from ‘[01m[Kclass Eigen::ProductImpl<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0, Eigen::Dense>[m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/Product.h:71:7:[m[K   required from ‘[01m[Kclass Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0>[m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Transform.h:1390:72:[m[K   required from ‘[01m[Kstatic Eigen::internal::transform_right_product_impl<TransformType, MatrixType, 2, 1>::ResultType Eigen::internal::transform_right_product_impl<TransformType, MatrixType, 2, 1>::run(const TransformType&, const MatrixType&) [with TransformType = Eigen::Transform<float, 2, 1>; MatrixType = Eigen::Matrix<int, 2, 1>; Eigen::internal::transform_right_product_impl<TransformType, MatrixType, 2, 1>::ResultType = Eigen::Matrix<int, 2, 1>][m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Transform.h:442:80:[m[K   required from ‘[01m[Kconst typename Eigen::internal::transform_right_product_impl<Eigen::Transform<Scalar, Dim, Mode, _Options>, OtherDerived>::ResultType Eigen::Transform<Scalar, Dim, Mode, _Options>::operator*(const Eigen::EigenBase<OtherDerived>&) const [with OtherDerived = Eigen::Matrix<int, 2, 1>; _Scalar = float; int _Dim = 2; int _Mode = 1; int _Options = 0; typename Eigen::internal::transform_right_product_impl<Eigen::Transform<Scalar, Dim, Mode, _Options>, OtherDerived>::ResultType = Eigen::Matrix<int, 2, 1>][m[K’
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:136:46:[m[K   required from here
+[01m[K/usr/include/eigen3/Eigen/src/Core/Product.h:29:127:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KReturnType[m[K’ in ‘[01m[Kstruct Eigen::ScalarBinaryOpTraits<float, int, Eigen::internal::scalar_product_op<float, int> >[m[K’
+   29 |   typedef typename ScalarBinaryOpTraits<typename traits<LhsCleaned>::Scalar, typename traits<RhsCleaned>::Scalar>::ReturnType [01;31m[KScalar[m[K;
+      |                                                                                                                               [01;31m[K^~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:435[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Geometry:11[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:4[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:11[m[K:
+/usr/include/eigen3/Eigen/src/Core/DenseBase.h: In instantiation of ‘[01m[Kclass Eigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >[m[K’:
+[01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:48:34:[m[K   required from ‘[01m[Kclass Eigen::MatrixBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >[m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/Product.h:115:7:[m[K   required from ‘[01m[Kclass Eigen::internal::dense_product_base<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0, 3>[m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/Product.h:147:7:[m[K   required from ‘[01m[Kclass Eigen::ProductImpl<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0, Eigen::Dense>[m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/Product.h:71:7:[m[K   required from ‘[01m[Kclass Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0>[m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Transform.h:1390:72:[m[K   required from ‘[01m[Kstatic Eigen::internal::transform_right_product_impl<TransformType, MatrixType, 2, 1>::ResultType Eigen::internal::transform_right_product_impl<TransformType, MatrixType, 2, 1>::run(const TransformType&, const MatrixType&) [with TransformType = Eigen::Transform<float, 2, 1>; MatrixType = Eigen::Matrix<int, 2, 1>; Eigen::internal::transform_right_product_impl<TransformType, MatrixType, 2, 1>::ResultType = Eigen::Matrix<int, 2, 1>][m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Transform.h:442:80:[m[K   required from ‘[01m[Kconst typename Eigen::internal::transform_right_product_impl<Eigen::Transform<Scalar, Dim, Mode, _Options>, OtherDerived>::ResultType Eigen::Transform<Scalar, Dim, Mode, _Options>::operator*(const Eigen::EigenBase<OtherDerived>&) const [with OtherDerived = Eigen::Matrix<int, 2, 1>; _Scalar = float; int _Dim = 2; int _Mode = 1; int _Options = 0; typename Eigen::internal::transform_right_product_impl<Eigen::Transform<Scalar, Dim, Mode, _Options>, OtherDerived>::ResultType = Eigen::Matrix<int, 2, 1>][m[K’
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:136:46:[m[K   required from here
+[01m[K/usr/include/eigen3/Eigen/src/Core/DenseBase.h:83:17:[m[K [01;31m[Kerror: [m[Kno members matching ‘[01m[KEigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base {aka Eigen::DenseCoeffsBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0>, 0>}::coeff[m[K’ in ‘[01m[KEigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base[m[K’ {aka ‘[01m[Kclass Eigen::DenseCoeffsBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0>, 0>[m[K’}
+   83 |     using Base::[01;31m[Kcoeff[m[K;
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/DenseBase.h:84:17:[m[K [01;31m[Kerror: [m[Kno members matching ‘[01m[KEigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base {aka Eigen::DenseCoeffsBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0>, 0>}::coeffByOuterInner[m[K’ in ‘[01m[KEigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base[m[K’ {aka ‘[01m[Kclass Eigen::DenseCoeffsBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0>, 0>[m[K’}
+   84 |     using Base::[01;31m[KcoeffByOuterInner[m[K;
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/DenseBase.h:85:26:[m[K [01;31m[Kerror: [m[Kno members matching ‘[01m[KEigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base {aka Eigen::DenseCoeffsBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0>, 0>}::operator()[m[K’ in ‘[01m[KEigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base[m[K’ {aka ‘[01m[Kclass Eigen::DenseCoeffsBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0>, 0>[m[K’}
+   85 |     using Base::operator([01;31m[K)[m[K;
+      |                          [01;31m[K^[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/DenseBase.h:86:26:[m[K [01;31m[Kerror: [m[Kno members matching ‘[01m[KEigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base {aka Eigen::DenseCoeffsBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0>, 0>}::operator[][m[K’ in ‘[01m[KEigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base[m[K’ {aka ‘[01m[Kclass Eigen::DenseCoeffsBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0>, 0>[m[K’}
+   86 |     using Base::operator[[01;31m[K][m[K;
+      |                          [01;31m[K^[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/DenseBase.h:87:17:[m[K [01;31m[Kerror: [m[Kno members matching ‘[01m[KEigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base {aka Eigen::DenseCoeffsBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0>, 0>}::x[m[K’ in ‘[01m[KEigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base[m[K’ {aka ‘[01m[Kclass Eigen::DenseCoeffsBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0>, 0>[m[K’}
+   87 |     using Base::[01;31m[Kx[m[K;
+      |                 [01;31m[K^[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/DenseBase.h:88:17:[m[K [01;31m[Kerror: [m[Kno members matching ‘[01m[KEigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base {aka Eigen::DenseCoeffsBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0>, 0>}::y[m[K’ in ‘[01m[KEigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base[m[K’ {aka ‘[01m[Kclass Eigen::DenseCoeffsBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0>, 0>[m[K’}
+   88 |     using Base::[01;31m[Ky[m[K;
+      |                 [01;31m[K^[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/DenseBase.h:89:17:[m[K [01;31m[Kerror: [m[Kno members matching ‘[01m[KEigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base {aka Eigen::DenseCoeffsBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0>, 0>}::z[m[K’ in ‘[01m[KEigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base[m[K’ {aka ‘[01m[Kclass Eigen::DenseCoeffsBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0>, 0>[m[K’}
+   89 |     using Base::[01;31m[Kz[m[K;
+      |                 [01;31m[K^[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/DenseBase.h:90:17:[m[K [01;31m[Kerror: [m[Kno members matching ‘[01m[KEigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base {aka Eigen::DenseCoeffsBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0>, 0>}::w[m[K’ in ‘[01m[KEigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base[m[K’ {aka ‘[01m[Kclass Eigen::DenseCoeffsBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0>, 0>[m[K’}
+   90 |     using Base::[01;31m[Kw[m[K;
+      |                 [01;31m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:436[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Geometry:11[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:4[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:11[m[K:
+/usr/include/eigen3/Eigen/src/Core/MatrixBase.h: In instantiation of ‘[01m[Kclass Eigen::MatrixBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >[m[K’:
+[01m[K/usr/include/eigen3/Eigen/src/Core/Product.h:115:7:[m[K   required from ‘[01m[Kclass Eigen::internal::dense_product_base<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0, 3>[m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/Product.h:147:7:[m[K   required from ‘[01m[Kclass Eigen::ProductImpl<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0, Eigen::Dense>[m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/Product.h:71:7:[m[K   required from ‘[01m[Kclass Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0>[m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Transform.h:1390:72:[m[K   required from ‘[01m[Kstatic Eigen::internal::transform_right_product_impl<TransformType, MatrixType, 2, 1>::ResultType Eigen::internal::transform_right_product_impl<TransformType, MatrixType, 2, 1>::run(const TransformType&, const MatrixType&) [with TransformType = Eigen::Transform<float, 2, 1>; MatrixType = Eigen::Matrix<int, 2, 1>; Eigen::internal::transform_right_product_impl<TransformType, MatrixType, 2, 1>::ResultType = Eigen::Matrix<int, 2, 1>][m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Transform.h:442:80:[m[K   required from ‘[01m[Kconst typename Eigen::internal::transform_right_product_impl<Eigen::Transform<Scalar, Dim, Mode, _Options>, OtherDerived>::ResultType Eigen::Transform<Scalar, Dim, Mode, _Options>::operator*(const Eigen::EigenBase<OtherDerived>&) const [with OtherDerived = Eigen::Matrix<int, 2, 1>; _Scalar = float; int _Dim = 2; int _Mode = 1; int _Options = 0; typename Eigen::internal::transform_right_product_impl<Eigen::Transform<Scalar, Dim, Mode, _Options>, OtherDerived>::ResultType = Eigen::Matrix<int, 2, 1>][m[K’
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:136:46:[m[K   required from here
+[01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:75:17:[m[K [01;31m[Kerror: [m[Kno members matching ‘[01m[KEigen::MatrixBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base {aka Eigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >}::coeff[m[K’ in ‘[01m[KEigen::MatrixBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base[m[K’ {aka ‘[01m[Kclass Eigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >[m[K’}
+   75 |     using Base::[01;31m[Kcoeff[m[K;
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:78:17:[m[K [01;31m[Kerror: [m[Kno members matching ‘[01m[KEigen::MatrixBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base {aka Eigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >}::eval[m[K’ in ‘[01m[KEigen::MatrixBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base[m[K’ {aka ‘[01m[Kclass Eigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >[m[K’}
+   78 |     using Base::[01;31m[Keval[m[K;
+      |                 [01;31m[K^~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:81:25:[m[K [01;31m[Kerror: [m[Kno members matching ‘[01m[KEigen::MatrixBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base {aka Eigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >}::operator*=[m[K’ in ‘[01m[KEigen::MatrixBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base[m[K’ {aka ‘[01m[Kclass Eigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >[m[K’}
+   81 |     using Base::operator[01;31m[K*=[m[K;
+      |                         [01;31m[K^~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:82:25:[m[K [01;31m[Kerror: [m[Kno members matching ‘[01m[KEigen::MatrixBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base {aka Eigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >}::operator/=[m[K’ in ‘[01m[KEigen::MatrixBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >::Base[m[K’ {aka ‘[01m[Kclass Eigen::DenseBase<Eigen::Product<Eigen::Matrix<float, 3, 3>, Eigen::Matrix<int, 3, 1>, 0> >[m[K’}
+   82 |     using Base::operator[01;31m[K/=[m[K;
+      |                         [01;31m[K^~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:366[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Geometry:11[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:4[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:11[m[K:
+/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h: In instantiation of ‘[01m[Kvoid Eigen::internal::call_assignment_no_alias(Dst&, const Src&, const Func&) [with Dst = Eigen::Matrix<float, 2, 1>; Src = Eigen::Matrix<int, 2, 1>; Func = Eigen::internal::assign_op<float, int>][m[K’:
+[01m[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:732:41:[m[K   required from ‘[01m[KDerived& Eigen::PlainObjectBase<Derived>::_set_noalias(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::Matrix<int, 2, 1>; Derived = Eigen::Matrix<float, 2, 1>][m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:537:7:[m[K   required from ‘[01m[KEigen::PlainObjectBase<Derived>::PlainObjectBase(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::Matrix<int, 2, 1>; Derived = Eigen::Matrix<float, 2, 1>][m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:377:29:[m[K   required from ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Eigen::EigenBase<OtherDerived>&) [with OtherDerived = Eigen::Matrix<int, 2, 1>; _Scalar = float; int _Rows = 2; int _Cols = 1; int _Options = 0; int _MaxRows = 2; int _MaxCols = 1][m[K’
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp:136:46:[m[K   required from here
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/XprHelper.h:819:96:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: YOU_MIXED_DIFFERENT_NUMERIC_TYPES__YOU_NEED_TO_USE_THE_CAST_METHOD_OF_MATRIXBASE_TO_CAST_NUMERIC_TYPES_EXPLICITLY
+  819 |   EIGEN_STATIC_ASSERT([01;31m[K(Eigen::internal::has_ReturnType<ScalarBinaryOpTraits<LHS, RHS,BINOP> >::value)[m[K, \
+      |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+   33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert([01;36m[KX[m[K,#MSG);
+      |                                                      [01;36m[K^[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:834:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_CHECK_BINARY_COMPATIBILIY[m[K’
+  834 |   [01;36m[KEIGEN_CHECK_BINARY_COMPATIBILIY[m[K(Func,typename ActualDstTypeCleaned::Scalar,typename Src::Scalar);
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/main_node.dir/build.make:63: CMakeFiles/main_node.dir/src/main_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/main_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

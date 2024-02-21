@@ -1,0 +1,13 @@
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node_old.cpp:[m[K In function ‘[01m[Kvoid mapCallBack(const OccupancyGrid&)[m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node_old.cpp:44:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kd_f[m[K’ was not declared in this scope
+   44 |             [01;31m[Kd_f[m[K = d.cast<float>();
+      |             [01;31m[K^~~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node_old.cpp:44:21:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kcast[m[K’ in ‘[01m[Kd[m[K’, which is of non-class type ‘[01m[Kconst signed char[m[K’
+   44 |             d_f = d.[01;31m[Kcast[m[K<float>();
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node_old.cpp:44:26:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+   44 |             d_f = d.cast<[01;31m[Kfloat[m[K>();
+      |                          [01;31m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/main_node.dir/build.make:63: CMakeFiles/main_node.dir/src/main_node_old.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/main_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

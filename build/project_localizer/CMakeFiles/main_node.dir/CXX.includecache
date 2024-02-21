@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp
+/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node_old.cpp
 ros/ros.h
 -
 iostream

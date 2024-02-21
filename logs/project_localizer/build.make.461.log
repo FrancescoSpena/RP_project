@@ -1,0 +1,11 @@
+[ 36%] Built target rp_library
+[35m[1mScanning dependencies of target main_node[0m
+[ 54%] Built target dmap_localizer_test
+[ 54%] Built target grid_main
+[ 63%] Built target dmap_test_in_class
+[ 72%] Built target test_grid_map
+[ 81%] Built target dmap_grid_localizer_test
+[ 86%] [32mBuilding CXX object CMakeFiles/main_node.dir/src/main_node_old.cpp.o[0m
+[ 95%] Built target rp_simulator
+[100%] [32m[1mLinking CXX executable /home/francesco/Desktop/RP_project/devel/.private/project_localizer/lib/project_localizer/main_node[0m
+[100%] Built target main_node

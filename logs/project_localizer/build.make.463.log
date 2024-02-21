@@ -1,0 +1,28 @@
+[ 36%] Built target rp_library
+[35m[1mScanning dependencies of target main_node[0m
+[35m[1mScanning dependencies of target dmap_grid_localizer_test[0m
+[ 63%] Built target grid_main
+[ 63%] Built target dmap_localizer_test
+[ 63%] Built target dmap_test_in_class
+[ 72%] Built target rp_simulator
+[ 77%] [32mBuilding CXX object CMakeFiles/main_node.dir/src/main_node_old.cpp.o[0m
+[ 86%] Built target test_grid_map
+[ 90%] [32mBuilding CXX object src/rp_stuff/CMakeFiles/dmap_grid_localizer_test.dir/dmap_grid_localizer_test.cpp.o[0m
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node_old.cpp:[m[K In function ‘[01m[Kvoid mapCallBack(const OccupancyGrid&)[m[K’:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node_old.cpp:55:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kdistances[m[K’ was not declared in this scope
+   55 |         Grid_<uint8_t> obstacle_image([01;31m[Kdistances[m[K.rows, distances.cols);
+      |                                       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node_old.cpp:67:26:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kint showCanvas(Canvas&, int)[m[K’
+   67 |         showCanvas(canvas[01;31m[K)[m[K;
+      |                          [01;31m[K^[m[K
+In file included from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/grid.h:8[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/dmap.h:2[m[K,
+                 from [01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/main_node_old.cpp:11[m[K:
+[01m[K/home/francesco/Desktop/RP_project/src/project_localizer/src/rp_stuff/draw_helpers.h:10:5:[m[K [01;36m[Knote: [m[Kdeclared here
+   10 | int [01;36m[KshowCanvas[m[K(Canvas& canvas, int timeout_ms);
+      |     [01;36m[K^~~~~~~~~~[m[K
+[ 95%] [32m[1mLinking CXX executable /home/francesco/Desktop/RP_project/devel/.private/project_localizer/lib/project_localizer/dmap_grid_localizer_test[0m
+[ 95%] Built target dmap_grid_localizer_test
+make[2]: *** [CMakeFiles/main_node.dir/build.make:63: CMakeFiles/main_node.dir/src/main_node_old.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/main_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

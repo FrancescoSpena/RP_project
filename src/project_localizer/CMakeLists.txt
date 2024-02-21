@@ -143,7 +143,7 @@ add_subdirectory(src/rp_stuff)
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(main_node src/main_node.cpp)
+add_executable(main_node src/main_node_old.cpp)
 
 
 ## Rename C++ executable without prefix

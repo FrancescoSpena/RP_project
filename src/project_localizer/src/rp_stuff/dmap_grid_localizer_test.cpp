@@ -61,7 +61,7 @@ int main(int argc, char** argv) {
   // now run the localizer
   Isometry2f X=Eigen::Isometry2f::Identity();
   X.linear()=Rotation2Df(0.1).matrix();
-  X.translation()<< 0.5, 0.5;
+  X.translation()<< 0, 0;
   localizer.X=X;
   bool show_obstacles=false;
   while (1) {

@@ -57,27 +57,27 @@ include CMakeFiles/main_node.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main_node.dir/flags.make
 
-CMakeFiles/main_node.dir/src/main_node.cpp.o: CMakeFiles/main_node.dir/flags.make
-CMakeFiles/main_node.dir/src/main_node.cpp.o: /home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/francesco/Desktop/RP_project/build/project_localizer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main_node.dir/src/main_node.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main_node.dir/src/main_node.cpp.o -c /home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp
+CMakeFiles/main_node.dir/src/main_node_old.cpp.o: CMakeFiles/main_node.dir/flags.make
+CMakeFiles/main_node.dir/src/main_node_old.cpp.o: /home/francesco/Desktop/RP_project/src/project_localizer/src/main_node_old.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/francesco/Desktop/RP_project/build/project_localizer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main_node.dir/src/main_node_old.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main_node.dir/src/main_node_old.cpp.o -c /home/francesco/Desktop/RP_project/src/project_localizer/src/main_node_old.cpp
 
-CMakeFiles/main_node.dir/src/main_node.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main_node.dir/src/main_node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp > CMakeFiles/main_node.dir/src/main_node.cpp.i
+CMakeFiles/main_node.dir/src/main_node_old.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main_node.dir/src/main_node_old.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/francesco/Desktop/RP_project/src/project_localizer/src/main_node_old.cpp > CMakeFiles/main_node.dir/src/main_node_old.cpp.i
 
-CMakeFiles/main_node.dir/src/main_node.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main_node.dir/src/main_node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/francesco/Desktop/RP_project/src/project_localizer/src/main_node.cpp -o CMakeFiles/main_node.dir/src/main_node.cpp.s
+CMakeFiles/main_node.dir/src/main_node_old.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main_node.dir/src/main_node_old.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/francesco/Desktop/RP_project/src/project_localizer/src/main_node_old.cpp -o CMakeFiles/main_node.dir/src/main_node_old.cpp.s
 
 # Object files for target main_node
 main_node_OBJECTS = \
-"CMakeFiles/main_node.dir/src/main_node.cpp.o"
+"CMakeFiles/main_node.dir/src/main_node_old.cpp.o"
 
 # External object files for target main_node
 main_node_EXTERNAL_OBJECTS =
 
-/home/francesco/Desktop/RP_project/devel/.private/project_localizer/lib/project_localizer/main_node: CMakeFiles/main_node.dir/src/main_node.cpp.o
+/home/francesco/Desktop/RP_project/devel/.private/project_localizer/lib/project_localizer/main_node: CMakeFiles/main_node.dir/src/main_node_old.cpp.o
 /home/francesco/Desktop/RP_project/devel/.private/project_localizer/lib/project_localizer/main_node: CMakeFiles/main_node.dir/build.make
 /home/francesco/Desktop/RP_project/devel/.private/project_localizer/lib/project_localizer/main_node: /opt/ros/noetic/lib/libroscpp.so
 /home/francesco/Desktop/RP_project/devel/.private/project_localizer/lib/project_localizer/main_node: /usr/lib/x86_64-linux-gnu/libpthread.so
