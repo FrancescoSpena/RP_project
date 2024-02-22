@@ -1,0 +1,7 @@
+Symlinking /home/francesco/Desktop/RP_project/devel/lib/libmap.so
+Symlinking /home/francesco/Desktop/RP_project/devel/lib/libicp.so
+Symlinking /home/francesco/Desktop/RP_project/devel/lib/liblocalizer2d.so
+Symlinking /home/francesco/Desktop/RP_project/devel/lib/icp_localization/localizer_node
+Symlinking /home/francesco/Desktop/RP_project/devel/lib/pkgconfig/icp_localization.pc
+Symlinking /home/francesco/Desktop/RP_project/devel/share/icp_localization/cmake/icp_localizationConfig-version.cmake
+Symlinking /home/francesco/Desktop/RP_project/devel/share/icp_localization/cmake/icp_localizationConfig.cmake

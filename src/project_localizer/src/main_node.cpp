@@ -51,12 +51,12 @@ void initCallBack(const geometry_msgs::PoseWithCovarianceStamped& init){
 
         //coordinates [frame = map]
         Isometry2f X=Eigen::Isometry2f::Identity();
+        Eigen::Quaternionf q(init.pose.pose.orientation.w,init.pose.pose.orientation.x,init.pose.pose.orientation.y,init.pose.pose.orientation.z); 
         float x = init.pose.pose.position.x;
         float y = init.pose.pose.position.y;
-        float angle = init.pose.pose.orientation.w;
         
         X.translation() << x, y;
-        X.linear()=Eigen::Rotation2Df(angle).matrix(); 
+        X.linear()=q.toRotationMatrix().topLeftCorner<2,2>();
 
         //Vector2f point = localizer.grid_mapping.world2grid(Vector2f(x,y));
         // std::cerr << "point = " << point.transpose() << std::endl;
@@ -71,7 +71,17 @@ void initCallBack(const geometry_msgs::PoseWithCovarianceStamped& init){
 
 void laserCallBack(const sensor_msgs::LaserScan& scan){
     if(map_received == true && init_pose_received == true){
-        
+        std::vector<Vector2f> scan_endpoints;
+        for (size_t i=0; i<scan.ranges.size(); ++i) {
+            float alpha=scan.angle_min+i*scan.angle_increment;
+            float r=scan.ranges[i];
+            if (r< scan.range_min || r> scan.range_max)
+            continue;
+            scan_endpoints.push_back(Vector2f(r*cos(alpha), r*sin(alpha)));
+        }
+
+        localizer.localize(scan_endpoints,10);
+        std::cerr << "t: " << localizer.X.translation().transpose() << std::endl;
     }
     return;
 }
@@ -79,7 +89,7 @@ void laserCallBack(const sensor_msgs::LaserScan& scan){
 int main(int argc, char** argv){
     std::string map_topic_name = "/map";
     std::string init_topic_name = "/initialpose";
-    std::string laser_topic_name = "/laser";
+    std::string laser_topic_name = "/base_scan";
 
     ros::init(argc,argv,"main_node");
     ros::NodeHandle n_map; 
